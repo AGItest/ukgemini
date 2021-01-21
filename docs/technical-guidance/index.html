@@ -77,16 +77,6 @@
 				
 				
 				
-				<a  class="nav-link" href="/why/" ><span>Why UK GEMINI</span></a>
-			</li>
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
 				<a  class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
 			</li>
 			
@@ -97,7 +87,7 @@
 				
 				
 				
-				<a  class="nav-link" href="/blog/" ><span>Blog</span></a>
+				<a  class="nav-link" href="/community/" ><span>Community</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -107,7 +97,7 @@
 				
 				
 				
-				<a  class="nav-link" href="/community/" ><span>Community</span></a>
+				<a  class="nav-link" href="/blog/" ><span>Blog</span></a>
 			</li>
 			
 			
@@ -158,31 +148,6 @@
   <ul>
     <li class="collapse show" id="docs">
       
-      
-      
-      
-        
-          
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsoverview">
-      
-      
-      
-    </li>
-  </ul>
-</ul>
-
-        
       
       
       
@@ -517,7 +482,7 @@
 	<h1>Technical Guidance</h1>
         <div class="lead">Familiar with UK GEMINI and require specific information about the requirements and guidance for the metadata elements. encoding UK GEMINI metadata in XML, then general guidance is supplemented with detailed guidance for each metadata element at datasets or series or for services</div>
 	
-            <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 23 minute read</p>
+            <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 37 minute read</p>
         
 	
 
@@ -592,8 +557,723 @@
 <p>The 'Metadata for datasets and dataset series' and 'Metadata for services' sections list metadata items from GEMINI2 in the order that they appear in GEMINI2. XML elements in an XML document must follow the <a title="XML Element Order" href="/40-gemini/1046-xml-element-order" target="_blank" rel="alternate noopener noreferrer">order </a>expressed in the XSD schema to which the XML document conforms. The order of XML element expressed by the XSD schema will not be the same as the order of metadata items in GEMINI2.</p>
 <p>Examples are provided by way of XML fragments throughout the document. Full metadata instances are shown here:</p>
 <p style="padding-left: 30px;"><a title="Dataset metadata instance example" href="/40-gemini/1044-dataset-metadata-instance-example" target="_blank" rel="alternate noopener noreferrer">Dataset metadata instance example</a></p>
+<p>An example of a schema and Schematron valid dataset metadata instance is shown below.</p>
+<p><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></p>
+<p><code>&lt;gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"</code></p>
+<p><code>                 xmlns:gsr="http://www.isotc211.org/2005/gsr"</code></p>
+<p><code>                 xmlns:xlink="http://www.w3.org/1999/xlink"</code></p>
+<p><code>                 xmlns:gss="http://www.isotc211.org/2005/gss"</code></p>
+<p><code>                 xmlns:gts="http://www.isotc211.org/2005/gts"</code></p>
+<p><code>                 xmlns:gml="http://www.opengis.net/gml/3.2"</code></p>
+<p><code>                 xmlns:gmx="http://www.isotc211.org/2005/gmx"</code></p>
+<p><code>                 xmlns:gco="http://www.isotc211.org/2005/gco"</code></p>
+<p><code>                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</code></p>
+<p><code>                 xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas/apiso-inspire/apiso-inspire.xsd"&gt;</code></p>
+<p><code>&lt;gmd:fileIdentifier&gt;</code></p>
+<p><code>     &lt;gco:CharacterString&gt;ae0e855d-f0a2-438e-855c-6ef5400f4ef3&lt;/gco:CharacterString&gt;</code></p>
+<p><code>&lt;/gmd:fileIdentifier&gt;</code></p>
+<p><code>&lt;gmd:language&gt;</code></p>
+<p><code>     &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng"&gt;eng&lt;/gmd:LanguageCode&gt;</code></p>
+<p><code>&lt;/gmd:language&gt;</code></p>
+<p><code>&lt;gmd:hierarchyLevel&gt;</code></p>
+<p><code>     &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"&gt;dataset&lt;/gmd:MD_ScopeCode&gt;</code></p>
+<p><code>&lt;/gmd:hierarchyLevel&gt;</code></p>
+<p><code>&lt;gmd:contact&gt;</code></p>
+<p><code>     &lt;gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>         &lt;gmd:organisationName&gt;</code></p>
+<p><code>           &lt;gco:CharacterString&gt;Ordnance Survey, Great Britain&lt;/gco:CharacterString&gt;</code></p>
+<p><code>         &lt;/gmd:organisationName&gt;</code></p>
+<p><code>         &lt;gmd:positionName&gt;</code></p>
+<p><code>           &lt;gco:CharacterString&gt;Customer Services&lt;/gco:CharacterString&gt;</code></p>
+<p><code>         &lt;/gmd:positionName&gt;</code></p>
+<p><code>         &lt;gmd:contactInfo&gt;</code></p>
+<p><code>           &lt;gmd:CI_Contact&gt;</code></p>
+<p><code>               &lt;gmd:phone&gt;</code></p>
+<p><code>                 &lt;gmd:CI_Telephone&gt;</code></p>
+<p><code>                     &lt;gmd:voice&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;+44 (0)8456 050505&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:voice&gt;</code></p>
+<p><code>                 &lt;/gmd:CI_Telephone&gt;</code></p>
+<p><code>               &lt;/gmd:phone&gt;</code></p>
+<p><code>               &lt;gmd:address&gt;</code></p>
+<p><code>                 &lt;gmd:CI_Address&gt;</code></p>
+<p><code>                     &lt;gmd:deliveryPoint&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;Explorer House, Adanac Drive&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:deliveryPoint&gt;</code></p>
+<p><code>                     &lt;gmd:city&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;Southampton&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                    &lt;/gmd:city&gt;</code></p>
+<p><code>                     &lt;gmd:postalCode&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;SO16 0AS&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:postalCode&gt;</code></p>
+<p><code>                     &lt;gmd:country&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;United Kingdom&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:country&gt;</code></p>
+<p><code>                     &lt;gmd:electronicMailAddress&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt;<span id="cloak39a744831ba8c974b27fd2eb61c01dd3">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak39a744831ba8c974b27fd2eb61c01dd3').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy39a744831ba8c974b27fd2eb61c01dd3 = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;';
+				addy39a744831ba8c974b27fd2eb61c01dd3 = addy39a744831ba8c974b27fd2eb61c01dd3 + '&#111;s' + '&#46;' + '&#117;k';
+				var addy_text39a744831ba8c974b27fd2eb61c01dd3 = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;' + '&#111;s' + '&#46;' + '&#117;k';document.getElementById('cloak39a744831ba8c974b27fd2eb61c01dd3').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy39a744831ba8c974b27fd2eb61c01dd3 + '\'>'+addy_text39a744831ba8c974b27fd2eb61c01dd3+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:electronicMailAddress&gt;</code></p>
+<p><code>                 &lt;/gmd:CI_Address&gt;</code></p>
+<p><code>               &lt;/gmd:address&gt;</code></p>
+<p><code>           &lt;/gmd:CI_Contact&gt;</code></p>
+<p><code>         &lt;/gmd:contactInfo&gt;</code></p>
+<p><code>         &lt;gmd:role&gt;</code></p>
+<p><code>           &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode"</code></p>
+<p><code>codeListValue="pointOfContact"&gt;pointOfContact&lt;/gmd:CI_RoleCode&gt;</code></p>
+<p><code>         &lt;/gmd:role&gt;</code></p>
+<p><code>     &lt;/gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>&lt;/gmd:contact&gt;</code></p>
+<p><code>&lt;gmd:dateStamp&gt;</code></p>
+<p><code>     &lt;gco:DateTime&gt;2010-12-02T11:39:34&lt;/gco:DateTime&gt;</code></p>
+<p><code>&lt;/gmd:dateStamp&gt;</code></p>
+<p><code>&lt;gmd:referenceSystemInfo&gt;</code></p>
+<p><code>     &lt;gmd:MD_ReferenceSystem&gt;</code></p>
+<p><code>         &lt;gmd:referenceSystemIdentifier&gt;</code></p>
+<p><code>           &lt;gmd:RS_Identifier&gt;</code></p>
+<p><code>               &lt;gmd:code&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt; http://www.opengis.net/def/crs/EPSG/0/27700&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:code&gt;</code></p>
+<p><code>           &lt;/gmd:RS_Identifier&gt;</code></p>
+<p><code>         &lt;/gmd:referenceSystemIdentifier&gt;</code></p>
+<p><code>     &lt;/gmd:MD_ReferenceSystem&gt;</code></p>
+<p><code>&lt;/gmd:referenceSystemInfo&gt;</code></p>
+<p><code>&lt;gmd:identificationInfo&gt;</code></p>
+<p><code>     &lt;gmd:MD_DataIdentification&gt;</code></p>
+<p><code>         &lt;gmd:citation&gt;</code></p>
+<p><code>           &lt;gmd:CI_Citation&gt;</code></p>
+<p><code>               &lt;gmd:title&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Boundary-Line™&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:title&gt;</code></p>
+<p><code>               &lt;gmd:date&gt;</code></p>
+<p><code>                 &lt;gmd:CI_Date&gt;</code></p>
+<p><code>                     &lt;gmd:date&gt;</code></p>
+<p><code>                       &lt;gco:Date&gt;1996-04-01&lt;/gco:Date&gt;</code></p>
+<p><code>                     &lt;/gmd:date&gt;</code></p>
+<p><code>                     &lt;gmd:dateType&gt;</code></p>
+<p><code>                       &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode"</code></p>
+<p><code>codeListValue="creation"&gt;creation&lt;/gmd:CI_DateTypeCode&gt;</code></p>
+<p><code>                     &lt;/gmd:dateType&gt;</code></p>
+<p><code>                 &lt;/gmd:CI_Date&gt;</code></p>
+<p><code>               &lt;/gmd:date&gt;</code></p>
+<p><code>               &lt;gmd:identifier&gt;</code></p>
+<p><code>                 &lt;gmd:RS_Identifier&gt;</code></p>
+<p><code>                     &lt;gmd:code&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;Boundary-Line™&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:code&gt;</code></p>
+<p><code>                 &lt;/gmd:RS_Identifier&gt;</code></p>
+<p><code>               &lt;/gmd:identifier&gt;</code></p>
+<p><code>           &lt;/gmd:CI_Citation&gt;</code></p>
+<p><code>         &lt;/gmd:citation&gt;</code></p>
+<p><code>         &lt;gmd:abstract&gt;</code></p>
+<p><code>           &lt;gco:CharacterString&gt;Boundary-Line is a specialist 1:10 000 scale boundaries dataset. It contains all levels of electoral and administrative boundaries, from district, wards and civil parishes (or communities) up to parliamentary, assembly and European constituencies.</code></p>
+<p><code> </code></p>
+<p><code>The information is represented as vector digital data.  </code></p>
+<p><code> </code></p>
+<p><code>The boundary information is updated twice a year, in May and October. The May release contains the boundaries that have become live in the first week of May, in the year of release. The October release contains the May boundaries plus additional information. Customers can choose either May or October releases.</code></p>
+<p><code> </code></p>
+<p><code>    * County - The named  county, district, district ward, civil parish, county electoral division (ED).</code></p>
+<p><code>    * European constituencies - The named European region.</code></p>
+<p><code>    * Greater London Authority  - The Greater London Authority, Greater London Authority Assembly constituency, London borough, London borough ward.</code></p>
+<p><code>    * Metropolitan districts - The named metropolitan district, metropolitan district ward, civil parish where appropriate.</code></p>
+<p><code>    * Scottish parliamentary electoral region - The named Scottish Parliamentary electoral region, Scottish parliamentary constituency.</code></p>
+<p><code>    * Unitary authorities- The named unitary authority, unitary authority ward or unitary authority ED as appropriate, civil parish where appropriate, together with community in Wales.</code></p>
+<p><code>    * Welsh Assembly Electoral Region - The named Welsh Assembly electoral region, Welsh assembly constituency.</code></p>
+<p><code>    * Westminster constituencies - The named Westminster constituency.</code></p>
+<p><code>    * Extent of the realm -  Low water mark or seaward boundary extension.</code></p>
+<p><code>    * High water mark</code></p>
+<p><code>    * Unique identifiers -   For administrative areas, polygons and links.</code></p>
+<p><code>    * Area measurements</code></p>
+<p><code>    * Definitive names</code></p>
+<p><code>    * Census codes&lt;/gco:CharacterString&gt;</code></p>
+<p><code>         &lt;/gmd:abstract&gt;</code></p>
+<p><code>         &lt;gmd:pointOfContact&gt;</code></p>
+<p><code>           &lt;gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>               &lt;gmd:organisationName&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Ordnance Survey, Great Britain&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:organisationName&gt;</code></p>
+<p><code>               &lt;gmd:positionName&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Customer Services&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:positionName&gt;</code></p>
+<p><code>               &lt;gmd:contactInfo&gt;</code></p>
+<p><code>                 &lt;gmd:CI_Contact&gt;</code></p>
+<p><code>                     &lt;gmd:phone&gt;</code></p>
+<p><code>                       &lt;gmd:CI_Telephone&gt;</code></p>
+<p><code>                           &lt;gmd:voice&gt;</code></p>
+<p><code>                             &lt;gco:CharacterString&gt;+44 (0)8456 050505&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                           &lt;/gmd:voice&gt;</code></p>
+<p><code>                       &lt;/gmd:CI_Telephone&gt;</code></p>
+<p><code>                     &lt;/gmd:phone&gt;</code></p>
+<p><code>                     &lt;gmd:address&gt;</code></p>
+<p><code>                       &lt;gmd:CI_Address&gt;</code></p>
+<p><code>                           &lt;gmd:deliveryPoint&gt;</code></p>
+<p><code>                             &lt;gco:CharacterString&gt;Explorer House, Adanac Drive&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                          &lt;/gmd:deliveryPoint&gt;</code></p>
+<p><code>                           &lt;gmd:city&gt;</code></p>
+<p><code>                             &lt;gco:CharacterString&gt;Southampton&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                           &lt;/gmd:city&gt;</code></p>
+<p><code>                           &lt;gmd:postalCode&gt;</code></p>
+<p><code>                             &lt;gco:CharacterString&gt;SO16 0AS&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                           &lt;/gmd:postalCode&gt;</code></p>
+<p><code>                           &lt;gmd:country&gt;</code></p>
+<p><code>                             &lt;gco:CharacterString&gt;United Kingdom&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                           &lt;/gmd:country&gt;</code></p>
+<p><code>                           &lt;gmd:electronicMailAddress&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt;<span id="cloak1ab7c4803e7877895c4c7fd7ae0f1f15">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak1ab7c4803e7877895c4c7fd7ae0f1f15').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy1ab7c4803e7877895c4c7fd7ae0f1f15 = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;';
+				addy1ab7c4803e7877895c4c7fd7ae0f1f15 = addy1ab7c4803e7877895c4c7fd7ae0f1f15 + '&#111;s' + '&#46;' + '&#117;k';
+				var addy_text1ab7c4803e7877895c4c7fd7ae0f1f15 = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;' + '&#111;s' + '&#46;' + '&#117;k';document.getElementById('cloak1ab7c4803e7877895c4c7fd7ae0f1f15').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy1ab7c4803e7877895c4c7fd7ae0f1f15 + '\'>'+addy_text1ab7c4803e7877895c4c7fd7ae0f1f15+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                           &lt;/gmd:electronicMailAddress&gt;</code></p>
+<p><code>                       &lt;/gmd:CI_Address&gt;</code></p>
+<p><code>                     &lt;/gmd:address&gt;</code></p>
+<p><code>                     &lt;gmd:onlineResource&gt;</code></p>
+<p><code>                       &lt;gmd:CI_OnlineResource&gt;</code></p>
+<p><code>                           &lt;gmd:linkage&gt;</code></p>
+<p><code>                             &lt;gmd:URL&gt;https://os.uk/&lt;/gmd:URL&gt;</code></p>
+<p><code>                           &lt;/gmd:linkage&gt;</code></p>
+<p><code>                           &lt;gmd:description&gt;</code></p>
+<p><code>                             &lt;gco:CharacterString&gt;Ordnance Survey, Great Britain top level website&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                           &lt;/gmd:description&gt;</code></p>
+<p><code>                       &lt;/gmd:CI_OnlineResource&gt;</code></p>
+<p><code>                     &lt;/gmd:onlineResource&gt;</code></p>
+<p><code>                 &lt;/gmd:CI_Contact&gt;</code></p>
+<p><code>               &lt;/gmd:contactInfo&gt;</code></p>
+<p><code>               &lt;gmd:role&gt;</code></p>
+<p><code>                 &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode"</code></p>
+<p><code>codeListValue="publisher"&gt;publisher&lt;/gmd:CI_RoleCode&gt;</code></p>
+<p><code>               &lt;/gmd:role&gt;</code></p>
+<p><code>           &lt;/gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>         &lt;/gmd:pointOfContact&gt;</code></p>
+<p><code>         &lt;gmd:resourceMaintenance&gt;</code></p>
+<p><code>           &lt;gmd:MD_MaintenanceInformation&gt;</code></p>
+<p><code>               &lt;gmd:maintenanceAndUpdateFrequency&gt;</code></p>
+<p><code>                 &lt;gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode"</code></p>
+<p><code>codeListValue="biannually"&gt;biannually&lt;/gmd:MD_MaintenanceFrequencyCode&gt;</code></p>
+<p><code>               &lt;/gmd:maintenanceAndUpdateFrequency&gt;</code></p>
+<p><code>           &lt;/gmd:MD_MaintenanceInformation&gt;</code></p>
+<p><code>         &lt;/gmd:resourceMaintenance&gt;</code></p>
+<p><code>         &lt;gmd:graphicOverview&gt;</code></p>
+<p><code>           &lt;gmd:MD_BrowseGraphic&gt;</code></p>
+<p><code>               &lt;gmd:fileName&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;BoundaryLine_s.png&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:fileName&gt;</code></p>
+<p><code>               &lt;gmd:fileDescription&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;thumbnail&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:fileDescription&gt;</code></p>
+<p><code>               &lt;gmd:fileType&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;png&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:fileType&gt;</code></p>
+<p><code>           &lt;/gmd:MD_BrowseGraphic&gt;</code></p>
+<p><code>         &lt;/gmd:graphicOverview&gt;</code></p>
+<p><code>         &lt;gmd:descriptiveKeywords&gt;</code></p>
+<p><code>           &lt;gmd:MD_Keywords&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Geographical names&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:thesaurusName&gt;</code></p>
+<p><code>                 &lt;gmd:CI_Citation&gt;</code></p>
+<p><code>                     &lt;gmd:title&gt;</code></p>
+<p><code>                       &lt;gco:CharacterString&gt;GEMET - INSPIRE themes, version 1.0&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                     &lt;/gmd:title&gt;</code></p>
+<p><code>                     &lt;gmd:date&gt;</code></p>
+<p><code>                       &lt;gmd:CI_Date&gt;</code></p>
+<p><code>                           &lt;gmd:date&gt;</code></p>
+<p><code>                             &lt;gco:Date&gt;2008-06-01&lt;/gco:Date&gt;</code></p>
+<p><code>                           &lt;/gmd:date&gt;</code></p>
+<p><code>                           &lt;gmd:dateType&gt;</code></p>
+<p><code>                             &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode"</code></p>
+<p><code>codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;</code></p>
+<p><code>                           &lt;/gmd:dateType&gt;</code></p>
+<p><code>                       &lt;/gmd:CI_Date&gt;</code></p>
+<p><code>                     &lt;/gmd:date&gt;</code></p>
+<p><code>                 &lt;/gmd:CI_Citation&gt;</code></p>
+<p><code>               &lt;/gmd:thesaurusName&gt;</code></p>
+<p><code>           &lt;/gmd:MD_Keywords&gt;</code></p>
+<p><code>         &lt;/gmd:descriptiveKeywords&gt;</code></p>
+<p><code>         &lt;gmd:descriptiveKeywords&gt;</code></p>
+<p><code>           &lt;gmd:MD_Keywords&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Legal government boundaries&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Mapping&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Mid-Scales&lt;/gco:CharacterString&gt;</code></p>
+<p><code>             &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Electorial Boundaries&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;administrative boundaries&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;GSS codes&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Ordnance Survey&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>               &lt;gmd:keyword&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;OS&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:keyword&gt;</code></p>
+<p><code>           &lt;/gmd:MD_Keywords&gt;</code></p>
+<p><code>         &lt;/gmd:descriptiveKeywords&gt;</code></p>
+<p><code>         &lt;gmd:resourceConstraints&gt;</code></p>
+<p><code>           &lt;gmd:MD_LegalConstraints&gt;</code></p>
+<p><code>               &lt;gmd:accessConstraints&gt;</code></p>
+<p><code>                 &lt;gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode"</code></p>
+<p><code>codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;</code></p>
+<p><code>               &lt;/gmd:accessConstraints&gt;</code></p>
+<p><code></code></p>
+<p><code>               &lt;gmd:otherConstraints&gt;<br />                 &lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e"/&gt;<br />               &lt;/gmd:otherConstraints&gt;</code></p>
+<p><code>               &lt;gmd:otherConstraints&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;For further details on licensing see http://www.ordnancesurvey.co.uk/oswebsite/business/licences/index.html&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:otherConstraints&gt;</code></p>
+<p><code>           &lt;/gmd:MD_LegalConstraints&gt;</code></p>
+<p><code>         &lt;/gmd:resourceConstraints&gt;</code></p>
+<p><code>         &lt;gmd:resourceConstraints&gt;</code></p>
+<p><code> &lt;gmd:MD_LegalConstraints&gt;<br />  &lt;gmd:useConstraints&gt;<br />   &lt;gmd:MD_RestrictionCode<br />codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode"<br /> codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;<br />   &lt;/gmd:useConstraints&gt;<br />  &lt;gmd:otherConstraints&gt;<br />   &lt;gmx:Anchor xlink:href="https://os.uk/business/licences/index.html"&gt;Use limitation dependent upon licence&lt;/gmx:Anchor&gt;<br />  &lt;/gmd:otherConstraints&gt;<br /> &lt;/gmd:MD_LegalConstraints&gt;</code></p>
+<p><code>         &lt;/gmd:resourceConstraints&gt;</code></p>
+<p><code>         &lt;gmd:spatialResolution&gt;</code></p>
+<p><code>           &lt;gmd:MD_Resolution&gt;</code></p>
+<p><code>               &lt;gmd:equivalentScale&gt;</code></p>
+<p><code>                 &lt;gmd:MD_RepresentativeFraction&gt;</code></p>
+<p><code>                     &lt;gmd:denominator&gt;</code></p>
+<p><code>                       &lt;gco:Integer&gt;10000&lt;/gco:Integer&gt;</code></p>
+<p><code>                     &lt;/gmd:denominator&gt;</code></p>
+<p><code>                 &lt;/gmd:MD_RepresentativeFraction&gt;</code></p>
+<p><code>               &lt;/gmd:equivalentScale&gt;</code></p>
+<p><code>           &lt;/gmd:MD_Resolution&gt;</code></p>
+<p><code>         &lt;/gmd:spatialResolution&gt;</code></p>
+<p><code>         &lt;gmd:language&gt;</code></p>
+<p><code>           &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng"&gt;eng&lt;/gmd:LanguageCode&gt;</code></p>
+<p><code>         &lt;/gmd:language&gt;</code></p>
+<p><code>         &lt;gmd:topicCategory&gt;</code></p>
+<p><code>           &lt;gmd:MD_TopicCategoryCode&gt;boundaries&lt;/gmd:MD_TopicCategoryCode&gt;</code></p>
+<p><code>         &lt;/gmd:topicCategory&gt;</code></p>
+<p><code>         &lt;gmd:extent&gt;</code></p>
+<p><code>           &lt;gmd:EX_Extent&gt;</code></p>
+<p><code>               &lt;gmd:geographicElement&gt;</code></p>
+<p><code>                 &lt;gmd:EX_GeographicBoundingBox&gt;</code></p>
+<p><code>                     &lt;gmd:westBoundLongitude&gt;</code></p>
+<p><code>                       &lt;gco:Decimal&gt;-8.45&lt;/gco:Decimal&gt;</code></p>
+<p><code>                     &lt;/gmd:westBoundLongitude&gt;</code></p>
+<p><code>                     &lt;gmd:eastBoundLongitude&gt;</code></p>
+<p><code>                       &lt;gco:Decimal&gt;1.78&lt;/gco:Decimal&gt;</code></p>
+<p><code>                     &lt;/gmd:eastBoundLongitude&gt;</code></p>
+<p><code>                     &lt;gmd:southBoundLatitude&gt;</code></p>
+<p><code>                       &lt;gco:Decimal&gt;49.86&lt;/gco:Decimal&gt;</code></p>
+<p><code>                     &lt;/gmd:southBoundLatitude&gt;</code></p>
+<p><code>                     &lt;gmd:northBoundLatitude&gt;</code></p>
+<p><code>                       &lt;gco:Decimal&gt;60.86&lt;/gco:Decimal&gt;</code></p>
+<p><code>                     &lt;/gmd:northBoundLatitude&gt;</code></p>
+<p><code>                 &lt;/gmd:EX_GeographicBoundingBox&gt;</code></p>
+<p><code>               &lt;/gmd:geographicElement&gt;</code></p>
+<p><code>               &lt;gmd:temporalElement&gt;</code></p>
+<p><code>                 &lt;gmd:EX_TemporalExtent&gt;</code></p>
+<p><code>                     &lt;gmd:extent&gt;</code></p>
+<p><code>                       &lt;gml:TimePeriod gml:id="T1"&gt;</code></p>
+<p><code>                           &lt;gml:beginPosition&gt;2010-06-01&lt;/gml:beginPosition&gt;</code></p>
+<p><code>                           &lt;gml:endPosition&gt;2010-09-30&lt;/gml:endPosition&gt;</code></p>
+<p><code>                       &lt;/gml:TimePeriod&gt;</code></p>
+<p><code>                     &lt;/gmd:extent&gt;</code></p>
+<p><code>                 &lt;/gmd:EX_TemporalExtent&gt;</code></p>
+<p><code>               &lt;/gmd:temporalElement&gt;</code></p>
+<p><code>           &lt;/gmd:EX_Extent&gt;</code></p>
+<p><code>         &lt;/gmd:extent&gt;</code></p>
+<p><code>     &lt;/gmd:MD_DataIdentification&gt;</code></p>
+<p><code>&lt;/gmd:identificationInfo&gt;</code></p>
+<p><code>&lt;gmd:distributionInfo&gt;</code></p>
+<p><code>     &lt;gmd:MD_Distribution&gt;</code></p>
+<p><code>         &lt;gmd:distributionFormat&gt;</code></p>
+<p><code>           &lt;gmd:MD_Format&gt;</code></p>
+<p><code>               &lt;gmd:name&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;ESRI® Spatial data format (Shapefile)&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:name&gt;</code></p>
+<p><code>               &lt;gmd:version&gt;</code></p>
+<p><code>                  &lt;gco:CharacterString&gt;1.0&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:version&gt;</code></p>
+<p><code>           &lt;/gmd:MD_Format&gt;</code></p>
+<p><code>         &lt;/gmd:distributionFormat&gt;</code></p>
+<p><code>         &lt;gmd:transferOptions&gt;</code></p>
+<p><code>           &lt;gmd:MD_DigitalTransferOptions&gt;</code></p>
+<p><code>               &lt;gmd:onLine&gt;</code></p>
+<p><code>                 &lt;gmd:CI_OnlineResource&gt;</code></p>
+<p><code>                     &lt;gmd:linkage&gt;</code></p>
+<p><code>&lt;gmd:URL&gt;https://os.uk/oswebsite/products/boundaryline/&lt;/gmd:URL&gt;</code></p>
+<p><code>                     &lt;/gmd:linkage&gt;</code></p>
+<p><code>                     &lt;gmd:function&gt;</code></p>
+<p><code>                       &lt;gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode"</code></p>
+<p><code>codeListValue="information"&gt;information&lt;/gmd:CI_OnLineFunctionCode&gt;</code></p>
+<p><code>                     &lt;/gmd:function&gt;</code></p>
+<p><code>                 &lt;/gmd:CI_OnlineResource&gt;</code></p>
+<p><code>               &lt;/gmd:onLine&gt;</code></p>
+<p><code>           &lt;/gmd:MD_DigitalTransferOptions&gt;</code></p>
+<p><code>         &lt;/gmd:transferOptions&gt;</code></p>
+<p><code>     &lt;/gmd:MD_Distribution&gt;</code></p>
+<p><code>&lt;/gmd:distributionInfo&gt;</code></p>
+<p><code>&lt;gmd:dataQualityInfo&gt;</code></p>
+<p><code>     &lt;gmd:DQ_DataQuality&gt;</code></p>
+<p><code>         &lt;gmd:scope&gt;</code></p>
+<p><code>           &lt;gmd:DQ_Scope&gt;</code></p>
+<p><code>               &lt;gmd:level&gt;</code></p>
+<p><code>                 &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode"</code></p>
+<p><code>codeListValue="dataset"&gt;dataset&lt;/gmd:MD_ScopeCode&gt;</code></p>
+<p><code>               &lt;/gmd:level&gt;</code></p>
+<p><code>           &lt;/gmd:DQ_Scope&gt;</code></p>
+<p><code>         &lt;/gmd:scope&gt;</code></p>
+<p><code>         &lt;gmd:report&gt;<br />                &lt;gmd:DQ_DomainConsistency&gt;<br />                    &lt;gmd:result&gt;<br />                        &lt;gmd:DQ_ConformanceResult&gt;<br />                            &lt;gmd:specification&gt;<br />                                &lt;gmd:CI_Citation&gt;<br />                                    &lt;gmd:title&gt;<br />                                        &lt;gmx:Anchor xlink:href="http://data.europa.eu/eli/reg/2010/1089"&gt;Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services&lt;/gmx:Anchor&gt;<br />                                    &lt;/gmd:title&gt;<br />                                    &lt;gmd:date&gt;<br />                                        &lt;gmd:CI_Date&gt;<br />                                            &lt;gmd:date&gt;<br />                                                &lt;gco:Date&gt;2010-12-08&lt;/gco:Date&gt;<br />                                            &lt;/gmd:date&gt;<br />                                            &lt;gmd:dateType&gt;<br />                                                &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/&gt;<br />                                            &lt;/gmd:dateType&gt;<br />                                        &lt;/gmd:CI_Date&gt;<br />                                    &lt;/gmd:date&gt;<br />                                &lt;/gmd:CI_Citation&gt;<br />                            &lt;/gmd:specification&gt;<br />                            &lt;!-- Explanation is a required element but can be empty --&gt;<br />                            &lt;gmd:explanation gco:nilReason="inapplicable"/&gt;<br />                            &lt;!-- If not tested then --&gt;<br />                            &lt;gmd:pass gco:nilReason="unknown"/&gt;<br />                        &lt;/gmd:DQ_ConformanceResult&gt;<br />                    &lt;/gmd:result&gt;<br />                &lt;/gmd:DQ_DomainConsistency&gt;<br />           &lt;/gmd:report&gt;</code></p>
+<p><code>         &lt;gmd:lineage&gt;</code></p>
+<p><code>           &lt;gmd:LI_Lineage&gt;</code></p>
+<p><code>               &lt;gmd:statement&gt;</code></p>
+<p><code>                 &lt;gco:CharacterString&gt;Captured and maintained solely from legal boundary changes&lt;/gco:CharacterString&gt;</code></p>
+<p><code>               &lt;/gmd:statement&gt;</code></p>
+<p><code>           &lt;/gmd:LI_Lineage&gt;</code></p>
+<p><code>         &lt;/gmd:lineage&gt;</code></p>
+<p><code>     &lt;/gmd:DQ_DataQuality&gt;</code></p>
+<p><code>  &lt;/gmd:dataQualityInfo&gt;</code></p>
+<p><code>&lt;/gmd:MD_Metadata&gt;</code></p>
 <p style="padding-left: 30px;"><a title="Series metadata instance example" href="/40-gemini/1043-series-metadata-example-old" target="_blank" rel="alternate noopener noreferrer">Series metadata instance example</a></p>
+<p>An example of a schema and Schematron valid metadata instance is shown below.</p>
+<p><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code></p>
+<p><code>&lt;gmd:MD_Metadata xmlns:gsr="http://www.isotc211.org/2005/gsr"</code></p>
+<p><code>                 xmlns:xlink="http://www.w3.org/1999/xlink" </code></p>
+<p><code>                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</code></p>
+<p><code>                 xmlns:gss="http://www.isotc211.org/2005/gss"</code></p>
+<p><code>                 xmlns:gts="http://www.isotc211.org/2005/gts"</code></p>
+<p><code>                 xmlns:gml="http://www.opengis.net/gml/3.2"</code></p>
+<p><code>                 xmlns:gmx="http://www.isotc211.org/2005/gmx"</code></p>
+<p><code>                 xmlns:srv="http://www.isotc211.org/2005/srv"</code></p>
+<p><code>                 xmlns:gco="http://www.isotc211.org/2005/gco"</code></p>
+<p><code>                 xmlns:gmd="http://www.isotc211.org/2005/gmd"&gt;</code></p>
+<p><code>&lt;gmd:fileIdentifier&gt;</code></p>
+<p><code>    &lt;gco:CharacterString&gt;7928d609-e225-494c-ab79-99b92de8b5bb&lt;/gco:CharacterString&gt;</code></p>
+<p><code>  &lt;/gmd:fileIdentifier&gt;</code></p>
+<p><code>  &lt;gmd:language&gt;</code></p>
+<p><code>    &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng"&gt;eng&lt;/gmd:LanguageCode&gt;</code></p>
+<p><code>  &lt;/gmd:language&gt;</code></p>
+<p><code>  &lt;gmd:hierarchyLevel&gt;</code></p>
+<p><code>    &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"&gt;series&lt;/gmd:MD_ScopeCode&gt;</code></p>
+<p><code>  &lt;/gmd:hierarchyLevel&gt;</code></p>
+<p><code>  &lt;gmd:hierarchyLevelName&gt;</code></p>
+<p><code>    &lt;gco:CharacterString&gt;10k Raster&lt;/gco:CharacterString&gt;</code></p>
+<p><code>  &lt;/gmd:hierarchyLevelName&gt;</code></p>
+<p><code>  &lt;gmd:contact&gt;</code></p>
+<p><code>    &lt;gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>      &lt;gmd:organisationName&gt;</code></p>
+<p><code>        &lt;gco:CharacterString&gt;Ordnance Survey&lt;/gco:CharacterString&gt;</code></p>
+<p><code>     &lt;/gmd:organisationName&gt;</code></p>
+<p><code>      &lt;gmd:contactInfo&gt;</code></p>
+<p><code>        &lt;gmd:CI_Contact&gt;</code></p>
+<p><code>          &lt;gmd:phone&gt;</code></p>
+<p><code>            &lt;gmd:CI_Telephone&gt;</code></p>
+<p><code>             &lt;gmd:voice&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;+44 (0)8456 050505&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:voice&gt;</code></p>
+<p><code>              &lt;gmd:facsimile&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;+44 (0)23 80792615&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:facsimile&gt;</code></p>
+<p><code>            &lt;/gmd:CI_Telephone&gt;</code></p>
+<p><code>          &lt;/gmd:phone&gt;</code></p>
+<p><code>          &lt;gmd:address&gt;</code></p>
+<p><code>            &lt;gmd:CI_Address&gt;</code></p>
+<p><code>              &lt;gmd:deliveryPoint&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;Ordnance Survey&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:deliveryPoint&gt;</code></p>
+<p><code>              &lt;gmd:deliveryPoint&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;Romsey Road&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:deliveryPoint&gt;</code></p>
+<p><code>              &lt;gmd:city&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;Southampton&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:city&gt;</code></p>
+<p><code>              &lt;gmd:postalCode&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;SO16 4GU&lt;/gco:CharacterString&gt;</code></p>
+<p><code>             &lt;/gmd:postalCode&gt;</code></p>
+<p><code>              &lt;gmd:electronicMailAddress&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt;<span id="cloake23688d210e66ecfa9eacfb3d95c45b7">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloake23688d210e66ecfa9eacfb3d95c45b7').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addye23688d210e66ecfa9eacfb3d95c45b7 = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;';
+				addye23688d210e66ecfa9eacfb3d95c45b7 = addye23688d210e66ecfa9eacfb3d95c45b7 + '&#111;rdn&#97;nc&#101;s&#117;rv&#101;y' + '&#46;' + 'c&#111;' + '&#46;' + '&#117;k';
+				var addy_texte23688d210e66ecfa9eacfb3d95c45b7 = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;' + '&#111;rdn&#97;nc&#101;s&#117;rv&#101;y' + '&#46;' + 'c&#111;' + '&#46;' + '&#117;k';document.getElementById('cloake23688d210e66ecfa9eacfb3d95c45b7').innerHTML += '<a ' + path + '\'' + prefix + ':' + addye23688d210e66ecfa9eacfb3d95c45b7 + '\'>'+addy_texte23688d210e66ecfa9eacfb3d95c45b7+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code></p>
+<p><code>             &lt;/gmd:electronicMailAddress&gt;</code></p>
+<p><code>            &lt;/gmd:CI_Address&gt;</code></p>
+<p><code>          &lt;/gmd:address&gt;</code></p>
+<p><code>          &lt;gmd:onlineResource&gt;</code></p>
+<p><code>            &lt;gmd:CI_OnlineResource&gt;</code></p>
+<p><code>             &lt;gmd:linkage&gt;</code></p>
+<p><code>                &lt;gmd:URL&gt;http://www.ordnancesurvey.co.uk&lt;/gmd:URL&gt;</code></p>
+<p><code>              &lt;/gmd:linkage&gt;</code></p>
+<p><code>            &lt;/gmd:CI_OnlineResource&gt;</code></p>
+<p><code>          &lt;/gmd:onlineResource&gt;</code></p>
+<p><code>        &lt;/gmd:CI_Contact&gt;</code></p>
+<p><code>      &lt;/gmd:contactInfo&gt;</code></p>
+<p><code>      &lt;gmd:role&gt;</code></p>
+<p><code>        &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"&gt;pointOfContact&lt;/gmd:CI_RoleCode&gt;</code></p>
+<p><code>     &lt;/gmd:role&gt;</code></p>
+<p><code>    &lt;/gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>  &lt;/gmd:contact&gt;</code></p>
+<p><code>  &lt;gmd:dateStamp&gt;</code></p>
+<p><code>    &lt;gco:Date&gt;2010-09-09&lt;/gco:Date&gt;</code></p>
+<p><code>  &lt;/gmd:dateStamp&gt;</code></p>
+<p><code>&lt;gmd:referenceSystemInfo&gt;</code></p>
+<p><code>    &lt;gmd:MD_ReferenceSystem&gt;</code></p>
+<p><code>     &lt;gmd:referenceSystemIdentifier&gt;</code></p>
+<p><code>        &lt;gmd:RS_Identifier&gt;</code></p>
+<p><code>          &lt;gmd:code&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt; http://www.opengis.net/def/crs/EPSG/0/27700&lt;/gco:CharacterString&gt;</code></p>
+<p><code>         &lt;/gmd:code&gt;</code></p>
+<p><code>        &lt;/gmd:RS_Identifier&gt;</code></p>
+<p><code>      &lt;/gmd:referenceSystemIdentifier&gt;</code></p>
+<p><code>    &lt;/gmd:MD_ReferenceSystem&gt;</code></p>
+<p><code>  &lt;/gmd:referenceSystemInfo&gt;</code></p>
+<p><code>  &lt;gmd:identificationInfo&gt;</code></p>
+<p><code>    &lt;gmd:MD_DataIdentification&gt;</code></p>
+<p><code>      &lt;gmd:citation&gt;</code></p>
+<p><code>        &lt;gmd:CI_Citation&gt;</code></p>
+<p><code>         &lt;gmd:title&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;1:10 000 Scale Raster&lt;/gco:CharacterString&gt;</code></p>
+<p><code>          &lt;/gmd:title&gt;</code></p>
+<p><code>          &lt;gmd:alternateTitle&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;10k Raster&lt;/gco:CharacterString&gt;</code></p>
+<p><code>         &lt;/gmd:alternateTitle&gt;</code></p>
+<p><code>          &lt;gmd:date&gt;</code></p>
+<p><code>            &lt;gmd:CI_Date&gt;</code></p>
+<p><code>              &lt;gmd:date&gt;</code></p>
+<p><code>                &lt;gco:Date&gt;2010-05-12&lt;/gco:Date&gt;</code></p>
+<p><code>              &lt;/gmd:date&gt;</code></p>
+<p><code>              &lt;gmd:dateType&gt;</code></p>
+<p><code>                &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code></p>
+<p><code>              &lt;/gmd:dateType&gt;</code></p>
+<p><code>            &lt;/gmd:CI_Date&gt;</code></p>
+<p><code>          &lt;/gmd:date&gt;</code></p>
+<p><code>          &lt;gmd:identifier&gt;</code></p>
+<p><code>            &lt;gmd:RS_Identifier&gt;</code></p>
+<p><code>             &lt;gmd:code&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;OS_10k_Raster&lt;/gco:CharacterString&gt;</code></p>
+<p><code>             &lt;/gmd:code&gt;</code></p>
+<p><code>              &lt;gmd:codeSpace&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt;http://www.ordnancesurvey.co.uk&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:codeSpace&gt;</code></p>
+<p><code>            &lt;/gmd:RS_Identifier&gt;</code></p>
+<p><code>          &lt;/gmd:identifier&gt;</code></p>
+<p><code>        &lt;/gmd:CI_Citation&gt;</code></p>
+<p><code>     &lt;/gmd:citation&gt;</code></p>
+<p><code>      &lt;gmd:abstract&gt;</code></p>
+<p><code>        &lt;gco:CharacterString&gt;Detailed raster mapping generated from 1:10 000 scale vector Landplan data. For overlay of information, particularly useful for site analysis, planning and marketing in urban areas.&lt;/gco:CharacterString&gt;</code></p>
+<p><code>      &lt;/gmd:abstract&gt;</code></p>
+<p><code>      &lt;gmd:pointOfContact&gt;</code></p>
+<p><code>        &lt;gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>          &lt;gmd:organisationName&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;Ordnance Survey&lt;/gco:CharacterString&gt;</code></p>
+<p><code>         &lt;/gmd:organisationName&gt;</code></p>
+<p><code>          &lt;gmd:contactInfo&gt;</code></p>
+<p><code>            &lt;gmd:CI_Contact&gt;</code></p>
+<p><code>              &lt;gmd:phone&gt;</code></p>
+<p><code>                &lt;gmd:CI_Telephone&gt;</code></p>
+<p><code>                 &lt;gmd:voice&gt;</code></p>
+<p><code>                    &lt;gco:CharacterString&gt;+44 (0)8456 050505&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                  &lt;/gmd:voice&gt;</code></p>
+<p><code>                  &lt;gmd:facsimile&gt;</code></p>
+<p><code>                    &lt;gco:CharacterString&gt;+44 (0)23 80792615&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                  &lt;/gmd:facsimile&gt;</code></p>
+<p><code>                &lt;/gmd:CI_Telephone&gt;</code></p>
+<p><code>              &lt;/gmd:phone&gt;</code></p>
+<p><code>              &lt;gmd:address&gt;</code></p>
+<p><code>                &lt;gmd:CI_Address&gt;</code></p>
+<p><code>                  &lt;gmd:deliveryPoint&gt;</code></p>
+<p><code>                    &lt;gco:CharacterString&gt;Ordnance Survey&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                  &lt;/gmd:deliveryPoint&gt;</code></p>
+<p><code>                  &lt;gmd:deliveryPoint&gt;</code></p>
+<p><code>                  &lt;gco:CharacterString&gt;Romsey Road&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                  &lt;/gmd:deliveryPoint&gt;</code></p>
+<p><code>                  &lt;gmd:city&gt;</code></p>
+<p><code>                    &lt;gco:CharacterString&gt;Southampton&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                  &lt;/gmd:city&gt;</code></p>
+<p><code>                  &lt;gmd:postalCode&gt;</code></p>
+<p><code>                    &lt;gco:CharacterString&gt;SO16 4GU&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                 &lt;/gmd:postalCode&gt;</code></p>
+<p><code>                  &lt;gmd:electronicMailAddress&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt;<span id="cloak8289287e7c10421577643a7aeb626abe">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak8289287e7c10421577643a7aeb626abe').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy8289287e7c10421577643a7aeb626abe = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;';
+				addy8289287e7c10421577643a7aeb626abe = addy8289287e7c10421577643a7aeb626abe + '&#111;rdn&#97;nc&#101;s&#117;rv&#101;y' + '&#46;' + 'c&#111;' + '&#46;' + '&#117;k';
+				var addy_text8289287e7c10421577643a7aeb626abe = 'c&#117;st&#111;m&#101;rs&#101;rv&#105;c&#101;s' + '&#64;' + '&#111;rdn&#97;nc&#101;s&#117;rv&#101;y' + '&#46;' + 'c&#111;' + '&#46;' + '&#117;k';document.getElementById('cloak8289287e7c10421577643a7aeb626abe').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy8289287e7c10421577643a7aeb626abe + '\'>'+addy_text8289287e7c10421577643a7aeb626abe+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code></p>
+<p><code>                 &lt;/gmd:electronicMailAddress&gt;</code></p>
+<p><code>                &lt;/gmd:CI_Address&gt;</code></p>
+<p><code>              &lt;/gmd:address&gt;</code></p>
+<p><code>              &lt;gmd:onlineResource&gt;</code></p>
+<p><code>                &lt;gmd:CI_OnlineResource&gt;</code></p>
+<p><code>                 &lt;gmd:linkage&gt;</code></p>
+<p><code>                    &lt;gmd:URL&gt;http://www.ordnancesurvey.co.uk/&lt;/gmd:URL&gt;</code></p>
+<p><code>                  &lt;/gmd:linkage&gt;</code></p>
+<p><code>                &lt;/gmd:CI_OnlineResource&gt;</code></p>
+<p><code>              &lt;/gmd:onlineResource&gt;</code></p>
+<p><code>            &lt;/gmd:CI_Contact&gt;</code></p>
+<p><code>          &lt;/gmd:contactInfo&gt;</code></p>
+<p><code>          &lt;gmd:role&gt;</code></p>
+<p><code>            &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator"&gt;originator&lt;/gmd:CI_RoleCode&gt;</code></p>
+<p><code>          &lt;/gmd:role&gt;</code></p>
+<p><code>        &lt;/gmd:CI_ResponsibleParty&gt;</code></p>
+<p><code>      &lt;/gmd:pointOfContact&gt;</code></p>
+<p><code>      &lt;gmd:resourceMaintenance&gt;</code></p>
+<p><code>        &lt;gmd:MD_MaintenanceInformation&gt;</code></p>
+<p><code>          &lt;gmd:maintenanceAndUpdateFrequency&gt;</code></p>
+<p><code>            &lt;gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="continual"&gt;continual&lt;/gmd:MD_MaintenanceFrequencyCode&gt;</code></p>
+<p><code>         &lt;/gmd:maintenanceAndUpdateFrequency&gt;</code></p>
+<p><code>        &lt;/gmd:MD_MaintenanceInformation&gt;</code></p>
+<p><code>      &lt;/gmd:resourceMaintenance&gt;</code></p>
+<p><code>      &lt;gmd:descriptiveKeywords&gt;</code></p>
+<p><code>        &lt;gmd:MD_Keywords&gt;</code></p>
+<p><code>          &lt;gmd:keyword&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;raster&lt;/gco:CharacterString&gt;</code></p>
+<p><code>          &lt;/gmd:keyword&gt;</code></p>
+<p><code>          &lt;gmd:keyword&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;map&lt;/gco:CharacterString&gt;</code></p>
+<p><code>          &lt;/gmd:keyword&gt;</code></p>
+<p><code>          &lt;gmd:thesaurusName&gt;</code></p>
+<p><code>            &lt;gmd:CI_Citation&gt;</code></p>
+<p><code>              &lt;gmd:title&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;GEMET - Concepts, version 2.4&lt;/gco:CharacterString&gt;</code></p>
+<p><code>              &lt;/gmd:title&gt;</code></p>
+<p><code>              &lt;gmd:date&gt;</code></p>
+<p><code>                &lt;gmd:CI_Date&gt;</code></p>
+<p><code>                  &lt;gmd:date&gt;</code></p>
+<p><code>                    &lt;gco:Date&gt;2010-01-13&lt;/gco:Date&gt;</code></p>
+<p><code>                  &lt;/gmd:date&gt;</code></p>
+<p><code>                  &lt;gmd:dateType&gt;</code></p>
+<p><code>                    &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" /&gt;</code></p>
+<p><code>                 &lt;/gmd:dateType&gt;</code></p>
+<p><code>                &lt;/gmd:CI_Date&gt;</code></p>
+<p><code>             &lt;/gmd:date&gt;</code></p>
+<p><code>              &lt;gmd:edition&gt;</code></p>
+<p><code>                &lt;gco:CharacterString&gt;version 2.4&lt;/gco:CharacterString&gt;</code></p>
+<p><code>             &lt;/gmd:edition&gt;</code></p>
+<p><code>            &lt;/gmd:CI_Citation&gt;</code></p>
+<p><code>         &lt;/gmd:thesaurusName&gt;</code></p>
+<p><code>        &lt;/gmd:MD_Keywords&gt;</code></p>
+<p><code>      &lt;/gmd:descriptiveKeywords&gt;</code></p>
+<p><code></code></p>
+<pre><code>       &lt;gmd:resourceConstraints&gt;</code><br /><code>         &lt;gmd:MD_LegalConstraints&gt;</code><br /> &lt;gmd:accessConstraints&gt;<br /> &lt;gmd:MD_RestrictionCode<br />codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode"<br /> codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;<br /> &lt;/gmd:accessConstraints&gt;<br /> &lt;gmd:otherConstraints&gt;<br /> &lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"&gt;no limitations&lt;/gmx:Anchor&gt;<br /> &lt;/gmd:otherConstraints&gt;<br /> &lt;/gmd:MD_LegalConstraints&gt;<br /> &lt;/gmd:resourceConstraints&gt;<br /> &lt;gmd:resourceConstraints&gt;<br /> &lt;gmd:MD_LegalConstraints&gt;<br /> &lt;gmd:useConstraints&gt;<br /> &lt;gmd:MD_RestrictionCode<br />codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode"<br /> codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;<br /> &lt;/gmd:useConstraints&gt;<br /><code>           &lt;gmd:otherConstraints&gt;</code><br /><code>             &lt;gco:CharacterString&gt;The 1:625k DiGMap data is made available for all uses - including commercial use, however the British Geological Survey (BGS) at all times retains the copyright in this material and you are not permitted, without an appropriate licence, to set up a service selling on this material. Your own use of any information provided by the British Geological Survey (BGS) is at your own risk. Neither BGS nor the Natural Environment Research Council (NERC) gives any warranty, condition or representation as to the quality, accuracy or completeness of the information or its suitability for any use or purpose. All implied conditions relating to the quality or suitability of the information, and all liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:otherConstraints&gt;</code><br /><code></code> &lt;gmd:otherConstraints&gt;<br /><code>            &lt;gco:CharacterString&gt;Ordnance Survey data licensing terms and conditions&lt;/gco:CharacterString&gt;</code><code><br />          &lt;/gmd:otherConstraints&gt;</code></pre>
+<p><code>        &lt;/gmd:MD_LegalConstraints&gt;</code></p>
+<p><code>      &lt;/gmd:resourceConstraints&gt;</code></p>
+<p><code>      &lt;gmd:resourceConstraints&gt;</code></p>
+<p><code>        &lt;gmd:MD_Constraints&gt;</code></p>
+<p><code>          &lt;gmd:useLimitation&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;Annual license fee for use of the data for internal business use including paper copies. Separate license fees and conditions for specific use to third parties&lt;/gco:CharacterString&gt;</code></p>
+<p><code>          &lt;/gmd:useLimitation&gt;</code></p>
+<p><code>        &lt;/gmd:MD_Constraints&gt;</code></p>
+<p><code>      &lt;/gmd:resourceConstraints&gt;</code></p>
+<p><code>      &lt;gmd:spatialResolution&gt;</code></p>
+<p><code>        &lt;gmd:MD_Resolution&gt;</code></p>
+<p><code>          &lt;gmd:equivalentScale&gt;</code></p>
+<p><code>            &lt;gmd:MD_RepresentativeFraction&gt;</code></p>
+<p><code>             &lt;gmd:denominator&gt;</code></p>
+<p><code>               &lt;gco:Integer&gt;10000&lt;/gco:Integer&gt;</code></p>
+<p><code>              &lt;/gmd:denominator&gt;</code></p>
+<p><code>           &lt;/gmd:MD_RepresentativeFraction&gt;</code></p>
+<p><code>          &lt;/gmd:equivalentScale&gt;</code></p>
+<p><code>        &lt;/gmd:MD_Resolution&gt;</code></p>
+<p><code>      &lt;/gmd:spatialResolution&gt;</code></p>
+<p><code>      &lt;gmd:language&gt;</code></p>
+<p><code>        &lt;gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng"&gt;eng&lt;/gmd:LanguageCode&gt;</code></p>
+<p><code>      &lt;/gmd:language&gt;</code></p>
+<p><code>      &lt;gmd:topicCategory&gt;</code></p>
+<p><code>&lt;gmd:MD_TopicCategoryCode&gt;imageryBaseMapsEarthCover&lt;/gmd:MD_TopicCategoryCode&gt;</code></p>
+<p><code>      &lt;/gmd:topicCategory&gt;</code></p>
+<p><code>      &lt;gmd:extent&gt;</code></p>
+<p><code>        &lt;gmd:EX_Extent&gt;</code></p>
+<p><code>          &lt;gmd:geographicElement&gt;</code></p>
+<p><code>            &lt;gmd:EX_GeographicBoundingBox&gt;</code></p>
+<p><code>              &lt;gmd:westBoundLongitude&gt;</code></p>
+<p><code>                &lt;gco:Decimal&gt;-8.45472&lt;/gco:Decimal&gt;</code></p>
+<p><code>              &lt;/gmd:westBoundLongitude&gt;</code></p>
+<p><code>              &lt;gmd:eastBoundLongitude&gt;</code></p>
+<p><code>                &lt;gco:Decimal&gt;1.78024&lt;/gco:Decimal&gt;</code></p>
+<p><code>              &lt;/gmd:eastBoundLongitude&gt;</code></p>
+<p><code>              &lt;gmd:southBoundLatitude&gt;</code></p>
+<p><code>              &lt;gco:Decimal&gt;49.8634&lt;/gco:Decimal&gt;</code></p>
+<p><code>              &lt;/gmd:southBoundLatitude&gt;</code></p>
+<p><code>              &lt;gmd:northBoundLatitude&gt;</code></p>
+<p><code>                &lt;gco:Decimal&gt;60.8599&lt;/gco:Decimal&gt;</code></p>
+<p><code>              &lt;/gmd:northBoundLatitude&gt;</code></p>
+<p><code>            &lt;/gmd:EX_GeographicBoundingBox&gt;</code></p>
+<p><code>         &lt;/gmd:geographicElement&gt;</code></p>
+<p><code>          &lt;gmd:temporalElement&gt;</code></p>
+<p><code>            &lt;gmd:EX_TemporalExtent&gt;</code></p>
+<p><code>             &lt;gmd:extent&gt;</code></p>
+<p><code>                &lt;gml:TimePeriod gml:id="_75c1e6a9-44ff-4aef-b923-c1b6f59d53a6"&gt;</code></p>
+<p><code>                  &lt;gml:beginPosition&gt;2003-03-04&lt;/gml:beginPosition&gt;</code></p>
+<p><code>                  &lt;gml:endPosition&gt;2010-05-12&lt;/gml:endPosition&gt;</code></p>
+<p><code>                &lt;/gml:TimePeriod&gt;</code></p>
+<p><code>             &lt;/gmd:extent&gt;</code></p>
+<p><code>            &lt;/gmd:EX_TemporalExtent&gt;</code></p>
+<p><code>          &lt;/gmd:temporalElement&gt;</code></p>
+<p><code>        &lt;/gmd:EX_Extent&gt;</code></p>
+<p><code>      &lt;/gmd:extent&gt;</code></p>
+<p><code>      &lt;gmd:supplementalInformation&gt;</code></p>
+<p><code>&lt;gco:CharacterString&gt;http://www.ordnancesurvey.co.uk/oswebsite/products/10kraster/&lt;/gco:CharacterString&gt;</code></p>
+<p><code>      &lt;/gmd:supplementalInformation&gt;</code></p>
+<p><code>    &lt;/gmd:MD_DataIdentification&gt;</code></p>
+<p><code>&lt;/gmd:identificationInfo&gt;</code></p>
+<p><code>  &lt;gmd:dataQualityInfo&gt;</code></p>
+<p><code>    &lt;gmd:DQ_DataQuality&gt;</code></p>
+<p><code>      &lt;gmd:scope&gt;</code></p>
+<p><code>        &lt;gmd:DQ_Scope&gt;</code></p>
+<p><code>          &lt;gmd:level&gt;</code></p>
+<p><code>            &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"&gt;series&lt;/gmd:MD_ScopeCode&gt;</code></p>
+<p><code>          &lt;/gmd:level&gt;</code></p>
+<p><code>        &lt;/gmd:DQ_Scope&gt;</code></p>
+<p><code>      &lt;/gmd:scope&gt;</code></p>
+<p><code>      &lt;gmd:lineage&gt;</code></p>
+<p><code>        &lt;gmd:LI_Lineage&gt;</code></p>
+<p><code>          &lt;gmd:statement&gt;</code></p>
+<p><code>            &lt;gco:CharacterString&gt;Unknown&lt;/gco:CharacterString&gt;</code></p>
+<p><code>          &lt;/gmd:statement&gt;</code></p>
+<p><code>        &lt;/gmd:LI_Lineage&gt;</code></p>
+<p><code>      &lt;/gmd:lineage&gt;</code></p>
+<p><code>    &lt;/gmd:DQ_DataQuality&gt;</code></p>
+<p><code>  &lt;/gmd:dataQualityInfo&gt;</code></p>
+<p><code>&lt;/gmd:MD_Metadata&gt;</code></p>
+<p><em>Last updated: April 2018</em><code></code></p>
 <p style="padding-left: 30px;"><a title="Service metadata instance example" href="/40-gemini/1042-service-metadata-instance-example" target="_blank" rel="alternate noopener noreferrer">Service metadata instance example</a></p>
+<p>An example of a schema and Schematron valid service metadata instance is shown below.</p>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code><br /><code>&lt;gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"</code><br /><code>                   xmlns:gco="http://www.isotc211.org/2005/gco"</code><br /><code>                   xmlns:gml="http://www.opengis.net/gml/3.2"</code><br /><code>                   xmlns:gmx="http://www.isotc211.org/2005/gmx"</code><br /><code>                   xmlns:gsr="http://www.isotc211.org/2005/gsr"</code><br /><code>                   xmlns:gss="http://www.isotc211.org/2005/gss"</code><br /><code>                   xmlns:gts="http://www.isotc211.org/2005/gts"</code><br /><code>                   xmlns:srv="http://www.isotc211.org/2005/srv"</code><br /><code>                   xmlns:xlink="http://www.w3.org/1999/xlink"&gt;</code><br /><code>   &lt;gmd:fileIdentifier&gt;</code><br /><code>     &lt;gco:CharacterString&gt;a0a82d76-657c-2a78-e044-0003ba9b0d98&lt;/gco:CharacterString&gt;</code><br /><code>   &lt;/gmd:fileIdentifier&gt;</code><br /><code>   &lt;gmd:language&gt;</code><br /><code>     &lt;gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="eng"&gt;English&lt;/gmd:LanguageCode&gt;</code><br /><code>   &lt;/gmd:language&gt;</code><br /><code>   &lt;gmd:hierarchyLevel&gt;</code><br /><code>     &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="service"&gt;service&lt;/gmd:MD_ScopeCode&gt;</code><br /><code>   &lt;/gmd:hierarchyLevel&gt;</code><br /><code>   &lt;gmd:hierarchyLevelName&gt;</code><br /><code>     &lt;gco:CharacterString&gt;service&lt;/gco:CharacterString&gt;</code><br /><code>   &lt;/gmd:hierarchyLevelName&gt;</code><br /><code>   &lt;gmd:contact&gt;</code><br /><code>     &lt;gmd:CI_ResponsibleParty&gt;</code><br /><code>       &lt;gmd:organisationName&gt;</code><br /><code>         &lt;gco:CharacterString&gt;British Geological Survey&lt;/gco:CharacterString&gt;</code><br /><code>       &lt;/gmd:organisationName&gt;</code><br /><code>       &lt;gmd:contactInfo&gt;</code><br /><code>         &lt;gmd:CI_Contact&gt;</code><br /><code>           &lt;gmd:phone&gt;</code><br /><code>             &lt;gmd:CI_Telephone&gt;</code><br /><code>               &lt;gmd:voice&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;+44 115 936 3100 Ex:3115&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:voice&gt;</code><br /><code>             &lt;/gmd:CI_Telephone&gt;</code><br /><code>           &lt;/gmd:phone&gt;</code><br /><code>           &lt;gmd:address&gt;</code><br /><code>             &lt;gmd:CI_Address&gt;</code><br /><code>               &lt;gmd:deliveryPoint&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;Murchison House, West Mains Road, Edinburgh, Lothian, United Kingdom, EH9 3LA, NG12 5GG&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:deliveryPoint&gt;</code><br /><code>               &lt;gmd:city&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;EDINBURGH&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:city&gt;</code><br /><code>               &lt;gmd:administrativeArea&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;LOTHIAN&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:administrativeArea&gt;</code><br /><code>               &lt;gmd:postalCode&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;EH9 3LA&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:postalCode&gt;</code><br /><code>               &lt;gmd:country&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;United Kingdom&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:country&gt;</code><br /><code>               &lt;gmd:electronicMailAddress&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;<span id="cloak99b1ae6b71a057239b1acb7aa3bdaa55">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak99b1ae6b71a057239b1acb7aa3bdaa55').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy99b1ae6b71a057239b1acb7aa3bdaa55 = '&#101;nq&#117;&#105;r&#105;&#101;s' + '&#64;';
+				addy99b1ae6b71a057239b1acb7aa3bdaa55 = addy99b1ae6b71a057239b1acb7aa3bdaa55 + 'bgs' + '&#46;' + '&#97;c' + '&#46;' + '&#117;k';
+				var addy_text99b1ae6b71a057239b1acb7aa3bdaa55 = '&#101;nq&#117;&#105;r&#105;&#101;s' + '&#64;' + 'bgs' + '&#46;' + '&#97;c' + '&#46;' + '&#117;k';document.getElementById('cloak99b1ae6b71a057239b1acb7aa3bdaa55').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy99b1ae6b71a057239b1acb7aa3bdaa55 + '\'>'+addy_text99b1ae6b71a057239b1acb7aa3bdaa55+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:electronicMailAddress&gt;</code><br /><code>             &lt;/gmd:CI_Address&gt;</code><br /><code>           &lt;/gmd:address&gt;</code><br /><code>         &lt;/gmd:CI_Contact&gt;</code><br /><code>       &lt;/gmd:contactInfo&gt;</code><br /><code>       &lt;gmd:role&gt;</code><br /><code>         &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"&gt;pointOfContact&lt;/gmd:CI_RoleCode&gt;</code><br /><code>       &lt;/gmd:role&gt;</code><br /><code>     &lt;/gmd:CI_ResponsibleParty&gt;</code><br /><code>   &lt;/gmd:contact&gt;</code><br /><code>   &lt;gmd:dateStamp&gt;</code><br /><code>     &lt;gco:Date&gt;2011-04-11&lt;/gco:Date&gt;</code><br /><code>   &lt;/gmd:dateStamp&gt;</code><br /><code>   &lt;gmd:metadataStandardName&gt;</code><br /><code>     &lt;gco:CharacterString&gt;ISO19115:2003(E)&lt;/gco:CharacterString&gt;</code><br /><code>   &lt;/gmd:metadataStandardName&gt;</code><br /><code>   &lt;gmd:metadataStandardVersion&gt;</code><br /><code>     &lt;gco:CharacterString&gt;GEMINI:2&lt;/gco:CharacterString&gt;</code><br /><code>   &lt;/gmd:metadataStandardVersion&gt;</code><br /><code>   &lt;gmd:referenceSystemInfo&gt;</code><br /><code>     &lt;gmd:MD_ReferenceSystem&gt;</code><br /><code>       &lt;gmd:referenceSystemIdentifier&gt;</code><br /><code>         &lt;gmd:RS_Identifier&gt;</code><br /><code>           &lt;gmd:authority&gt;</code><br /><code>             &lt;gmd:CI_Citation&gt;</code><br /><code>               &lt;gmd:title&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;www.epsg.org&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:title&gt;</code><br /><code>               &lt;gmd:date&gt;</code><br /><code>                 &lt;gmd:CI_Date&gt;</code><br /><code>                   &lt;gmd:date&gt;</code><br /><code>                     &lt;gco:Date&gt;2005&lt;/gco:Date&gt;</code><br /><code>                   &lt;/gmd:date&gt;</code><br /><code>                   &lt;gmd:dateType&gt;</code><br /><code>                     &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                   &lt;/gmd:dateType&gt;</code><br /><code>                 &lt;/gmd:CI_Date&gt;</code><br /><code>               &lt;/gmd:date&gt;</code><br /><code>             &lt;/gmd:CI_Citation&gt;</code><br /><code>           &lt;/gmd:authority&gt;</code><br /><code>           &lt;gmd:code&gt;</code><br /><code>             &lt;gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/4258"&gt;ETRS89-GRS80&lt;/gmx:Anchor&gt;</code><br /><code>           &lt;/gmd:code&gt;</code><br /><code>         </code><code>&lt;/gmd:RS_Identifier&gt;</code><br /><code>       &lt;/gmd:referenceSystemIdentifier&gt;</code><br /><code>     &lt;/gmd:MD_ReferenceSystem&gt;</code><br /><code>   &lt;/gmd:referenceSystemInfo&gt;</code><br /><code>   &lt;gmd:identificationInfo&gt;</code><br /><code>     &lt;srv:SV_ServiceIdentification&gt;</code><br /><code>       &lt;gmd:citation&gt;</code><br /><code>         &lt;gmd:CI_Citation&gt;</code><br /><code>           &lt;gmd:title&gt;</code><br /><code>             &lt;gco:CharacterString&gt;BGS Surface geology (OGC WxS INSPIRE IOC)&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:title&gt;</code><br /><code>           &lt;gmd:date&gt;</code><br /><code>             &lt;gmd:CI_Date&gt;</code><br /><code>               &lt;gmd:date&gt;</code><br /><code>                 &lt;gco:Date&gt;1995&lt;/gco:Date&gt;</code><br /><code>               &lt;/gmd:date&gt;</code><br /><code>               &lt;gmd:dateType&gt;</code><br /><code>                  &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>               &lt;/gmd:dateType&gt;</code><br /><code>             &lt;/gmd:CI_Date&gt;</code><br /><code>           &lt;/gmd:date&gt;</code><br /><code>           &lt;gmd:identifier&gt;</code><br /><code>             &lt;gmd:MD_Identifier&gt;</code><br /><code>               &lt;gmd:code&gt;</code><br /><code>                 &lt;gmx:Anchor xlink:href="http://data.bgs.ac.uk/id/dataHolding/13605559"&gt;BGS Surface geology&lt;/gmx:Anchor&gt;                 </code><br /><code>               &lt;/gmd:code&gt;</code><br /><code>             &lt;</code><code>/gmd:MD_Identifier&gt;</code><br /><code>           &lt;/gmd:identifier&gt;</code><br /><code>         &lt;/gmd:CI_Citation&gt;</code><br /><code>       &lt;/gmd:citation&gt;</code><br /><code>       &lt;gmd:abstract&gt;</code><br /><code>         &lt;gco:CharacterString&gt;Data from the DiGMap covering the whole of the United Kingdom at a scale of 1:625 000 is available in this OGC WMS service for personal, non-commercial use only. The service is a contribution to the OneGeology-Europe initiative. The layers can be displayed either by age or by lithology. For more information about the digital maps available from the British Geological Survey, please visit http://www.bgs.ac.uk/products/digitalmaps/digmapgb.html.&lt;/gco:CharacterString&gt;</code><br /><code>       &lt;/gmd:abstract&gt;</code><br /><code>       &lt;gmd:pointOfContact&gt;</code><br /><code>         &lt;gmd:CI_ResponsibleParty&gt;</code><br /><code>           &lt;gmd:individualName&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Westhead,Keith Robert&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:individualName&gt;</code><br /><code>           &lt;gmd:organisationName&gt;</code><br /><code>             &lt;gco:CharacterString&gt;British Geological Survey&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:organisationName&gt;</code><br /><code>           &lt;gmd:positionName&gt;</code><br /><code>             &lt;gco:CharacterString&gt;HoS - Information Delivery&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:positionName&gt;</code><br /><code>           &lt;gmd:contactInfo&gt;</code><br /><code>             &lt;gmd:CI_Contact&gt;</code><br /><code>               &lt;gmd:phone&gt;</code><br /><code>                 &lt;gmd:CI_Telephone&gt;</code><br /><code>                   &lt;gmd:voice&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;+44 131 667 1000 Ex:364&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:voice&gt;</code><br /><code>                 &lt;/gmd:CI_Telephone&gt;</code><br /><code>               &lt;/gmd:phone&gt;</code><br /><code>               &lt;gmd:address&gt;</code><br /><code>                 &lt;gmd:CI_Address&gt;</code><br /><code>                   &lt;gmd:deliveryPoint&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;Murchison House, West Mains Road, Edinburgh, Lothian, United Kingdom, EH9 3LA, NG12 5GG&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:deliveryPoint&gt;</code><br /><code>                   &lt;gmd:city&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;EDINBURGH&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:city&gt;</code><br /><code>                   &lt;gmd:administrativeArea&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;LOTHIAN&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:administrativeArea&gt;</code><br /><code>                   &lt;gmd:postalCode&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;EH9 3LA&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:postalCode&gt;</code><br /><code>                   &lt;gmd:country&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;United Kingdom&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:country&gt;</code><br /><code>                   &lt;gmd:electronicMailAddress&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;<span id="cloakf9aa22ce08524f7e844e0b630bfba924">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakf9aa22ce08524f7e844e0b630bfba924').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyf9aa22ce08524f7e844e0b630bfba924 = '&#101;nq&#117;&#105;r&#105;&#101;s' + '&#64;';
+				addyf9aa22ce08524f7e844e0b630bfba924 = addyf9aa22ce08524f7e844e0b630bfba924 + 'bgs' + '&#46;' + '&#97;c' + '&#46;' + '&#117;k';
+				var addy_textf9aa22ce08524f7e844e0b630bfba924 = '&#101;nq&#117;&#105;r&#105;&#101;s' + '&#64;' + 'bgs' + '&#46;' + '&#97;c' + '&#46;' + '&#117;k';document.getElementById('cloakf9aa22ce08524f7e844e0b630bfba924').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyf9aa22ce08524f7e844e0b630bfba924 + '\'>'+addy_textf9aa22ce08524f7e844e0b630bfba924+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:electronicMailAddress&gt;</code><br /><code>                 &lt;/gmd:CI_Address&gt;</code><br /><code>               &lt;/gmd:address&gt;</code><br /><code>             &lt;/gmd:CI_Contact&gt;</code><br /><code>           &lt;/gmd:contactInfo&gt;</code><br /><code>           &lt;gmd:role&gt;</code><br /><code>             &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor"&gt;distributor&lt;/gmd:CI_RoleCode&gt;</code><br /><code>           &lt;/gmd:role&gt;</code><br /><code>         &lt;/gmd:CI_ResponsibleParty&gt;</code><br /><code>       &lt;/gmd:pointOfContact&gt;</code><br /><code>       &lt;gmd:resourceMaintenance&gt;</code><br /><code>         &lt;gmd:MD_MaintenanceInformation&gt;</code><br /><code>           &lt;gmd:maintenanceAndUpdateFrequency&gt;</code><br /><code>             &lt;gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded"&gt;asNeeded&lt;/gmd:MD_MaintenanceFrequencyCode&gt;</code><br /><code>           &lt;/gmd:maintenanceAndUpdateFrequency&gt;</code><br /><code>         &lt;/gmd:MD_MaintenanceInformation&gt;</code><br /><code>       &lt;/gmd:resourceMaintenance&gt;</code><br /><code>       &lt;gmd:descriptiveKeywords&gt;</code><br /><code>         &lt;gmd:MD_Keywords&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Geology&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:thesaurusName&gt;</code><br /><code>             &lt;gmd:CI_Citation&gt;</code><br /><code>               &lt;gmd:title&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;GEMET Thesaurus version 1.0&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:title&gt;</code><br /><code>               &lt;gmd:date&gt;</code><br /><code>                 &lt;gmd:CI_Date&gt;</code><br /><code>                   &lt;gmd:date&gt;</code><br /><code>                     &lt;gco:Date&gt;2009-06-30&lt;/gco:Date&gt;</code><br /><code>                   &lt;/gmd:date&gt;</code><br /><code>                   &lt;gmd:dateType&gt;</code><br /><code>                     &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                   &lt;/gmd:dateType&gt;</code><br /><code>                 &lt;/gmd:CI_Date&gt;</code><br /><code>               &lt;/gmd:date&gt;</code><br /><code>             &lt;/gmd:CI_Citation&gt;</code><br /><code>           &lt;/gmd:thesaurusName&gt;</code><br /><code>         &lt;/gmd:MD_Keywords&gt;</code><br /><code>       &lt;/gmd:descriptiveKeywords&gt;</code><br /><code>       &lt;gmd:descriptiveKeywords&gt;</code><br /><code>         &lt;gmd:MD_Keywords&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Maps&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Digital maps&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Spatial data&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Geology&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;Data&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:thesaurusName&gt;</code><br /><code>             &lt;gmd:CI_Citation&gt;</code><br /><code>               &lt;gmd:title&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;BGS Thesaurus of Geosciences&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:title&gt;</code><br /><code>               &lt;gmd:date&gt;</code><br /><code>                 &lt;gmd:CI_Date&gt;</code><br /><code>                   &lt;gmd:date&gt;</code><br /><code>                     &lt;gco:Date&gt;2009&lt;/gco:Date&gt;</code><br /><code>                   &lt;/gmd:date&gt;</code><br /><code>                   &lt;gmd:dateType&gt;</code><br /><code>                     &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                   &lt;/gmd:dateType&gt;</code><br /><code>                 &lt;/gmd:CI_Date&gt;</code><br /><code>               &lt;/gmd:date&gt;</code><br /><code>             &lt;/gmd:CI_Citation&gt;</code><br /><code>           &lt;/gmd:thesaurusName&gt;</code><br /><code>          &lt;/gmd:MD_Keywords&gt;</code><br /><code>       &lt;/gmd:descriptiveKeywords&gt;</code><br /><code>       &lt;gmd:descriptiveKeywords&gt;</code><br /><code>         &lt;gmd:MD_Keywords&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;infoMapAccessService&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>           &lt;gmd:thesaurusName&gt;</code><br /><code>             &lt;gmd:CI_Citation&gt;</code><br /><code>               &lt;gmd:title&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;ISO 19119:2005&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:title&gt;</code><br /><code>               &lt;gmd:date&gt;</code><br /><code>                 &lt;gmd:CI_Date&gt;</code><br /><code>                   &lt;gmd:date&gt;</code><br /><code>                     &lt;gco:Date&gt;2008-04-16&lt;/gco:Date&gt;</code><br /><code>                   &lt;/gmd:date&gt;</code><br /><code>                   &lt;gmd:dateType&gt;</code><br /><code>                     &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                   &lt;/gmd:dateType&gt;</code><br /><code>                 &lt;/gmd:CI_Date&gt;</code><br /><code>                &lt;/gmd:date&gt;</code><br /><code>             &lt;/gmd:CI_Citation&gt;</code><br /><code>           &lt;/gmd:thesaurusName&gt;</code><br /><code>         &lt;/gmd:MD_Keywords&gt;</code><br /><code>       &lt;/gmd:descriptiveKeywords&gt;</code><br /><code>       &lt;gmd:descriptiveKeywords&gt;</code><br /><code>         &lt;gmd:MD_Keywords&gt;</code><br /><code>           &lt;gmd:keyword&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NERC_DDC&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:keyword&gt;</code><br /><code>         &lt;/gmd:MD_Keywords&gt;</code><br /><code>       &lt;/gmd:descriptiveKeywords&gt;</code><br /><code>       &lt;gmd:resourceConstraints&gt;</code><br /><code>         &lt;gmd:MD_LegalConstraints&gt;</code><br /> &lt;gmd:accessConstraints&gt;<br /> &lt;gmd:MD_RestrictionCode<br />codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode"<br /> codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;<br /> &lt;/gmd:accessConstraints&gt;<br /> &lt;gmd:otherConstraints&gt;<br /> &lt;gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"&gt;no limitations&lt;/gmx:Anchor&gt;<br /> &lt;/gmd:otherConstraints&gt;<br /> &lt;/gmd:MD_LegalConstraints&gt;<br /> &lt;/gmd:resourceConstraints&gt;<br /> &lt;gmd:resourceConstraints&gt;<br /> &lt;gmd:MD_LegalConstraints&gt;<br /> &lt;gmd:useConstraints&gt;<br /> &lt;gmd:MD_RestrictionCode<br />codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode"<br /> codeListValue="otherRestrictions"&gt;otherRestrictions&lt;/gmd:MD_RestrictionCode&gt;<br /> &lt;/gmd:useConstraints&gt;<br /><code>          &lt;gmd:otherConstraints&gt;</code><br /><code>            &lt;gco:CharacterString&gt;The 1:625k DiGMap data is made available for all uses - including commercial use, however the British Geological Survey (BGS) at all times retains the copyright in this material and you are not permitted, without an appropriate licence, to set up a service selling on this material. Your own use of any information provided by the British Geological Survey (BGS) is at your own risk. Neither BGS nor the Natural Environment Research Council (NERC) gives any warranty, condition or representation as to the quality, accuracy or completeness of the information or its suitability for any use or purpose. All implied conditions relating to the quality or suitability of the information, and all liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.&lt;/gco:CharacterString&gt;</code><br /><code>          &lt;/gmd:otherConstraints&gt;</code><br /><code>        &lt;/gmd:MD_LegalConstraints&gt;</code><br /><code>      &lt;/gmd:resourceConstraints&gt;</code><br /><code>      &lt;srv:serviceType&gt;</code><br /><code>         &lt;gco:LocalName codeSpace="INSPIRE"&gt;view&lt;/gco:LocalName&gt;</code><br /><code>      &lt;/srv:serviceType&gt;</code><br /><code>      &lt;srv:extent&gt;</code><br /><code>         &lt;gmd:EX_Extent&gt;</code><br /><code>           &lt;gmd:geographicElement&gt;</code><br /><code>             &lt;gmd:EX_GeographicDescription&gt;</code><br /><code>               &lt;gmd:geographicIdentifier&gt;</code><br /><code>                 &lt;gmd:MD_Identifier&gt;</code><br /><code>                   &lt;gmd:authority&gt;</code><br /><code>                     &lt;gmd:CI_Citation&gt;</code><br /><code>                       &lt;gmd:title&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;ISO 3166_2&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:title&gt;</code><br /><code>                       &lt;gmd:date&gt;</code><br /><code>                         &lt;gmd:CI_Date&gt;</code><br /><code>                           &lt;gmd:date&gt;</code><br /><code>                             &lt;gco:Date&gt;2009-01-07&lt;/gco:Date&gt;</code><br /><code>                           &lt;/gmd:date&gt;</code><br /><code>                           &lt;gmd:dateType&gt;</code><br /><code>                             &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                           &lt;/gmd:dateType&gt;</code><br /><code>                         &lt;/gmd:CI_Date&gt;</code><br /><code>                       &lt;/gmd:date&gt;</code><br /><code>                     &lt;/gmd:CI_Citation&gt;</code><br /><code>                  &lt;/gmd:authority&gt;</code><br /><code>                   &lt;gmd:code&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;UKM&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:code&gt;</code><br /><code>                 &lt;/gmd:MD_Identifier&gt;</code><br /><code>               &lt;/gmd:geographicIdentifier&gt;</code><br /><code>             &lt;/gmd:EX_GeographicDescription&gt;</code><br /><code>           &lt;/gmd:geographicElement&gt;</code><br /><code>           &lt;gmd:geographicElement&gt;</code><br /><code>             &lt;gmd:EX_GeographicDescription&gt;</code><br /><code>               &lt;gmd:geographicIdentifier&gt;</code><br /><code>                 &lt;gmd:MD_Identifier&gt;</code><br /><code>                    &lt;gmd:authority&gt;</code><br /><code>                     &lt;gmd:CI_Citation&gt;</code><br /><code>                       &lt;gmd:title&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;ISO 3166_1&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:title&gt;</code><br /><code>                       &lt;gmd:date&gt;</code><br /><code>                         &lt;gmd:CI_Date&gt;</code><br /><code>                           &lt;gmd:date&gt;</code><br /><code>                             &lt;gco:Date&gt;2009-01-07&lt;/gco:Date&gt;</code><br /><code>                           &lt;/gmd:date&gt;</code><br /><code>                           &lt;gmd:dateType&gt;</code><br /><code>                             &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"&gt;revision&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                           &lt;/gmd:dateType&gt;</code><br /><code>                         &lt;/gmd:CI_Date&gt;</code><br /><code>                       &lt;/gmd:date&gt;</code><br /><code>                     &lt;/gmd:CI_Citation&gt;</code><br /><code>                   &lt;/gmd:authority&gt;</code><br /><code>                   &lt;gmd:code&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;GB&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:code&gt;</code><br /><code>                 &lt;/gmd:MD_Identifier&gt;</code><br /><code>               &lt;/gmd:geographicIdentifier&gt;</code><br /><code>             &lt;/gmd:EX_GeographicDescription&gt;</code><br /><code>           &lt;/gmd:geographicElement&gt;</code><br /><code>           &lt;gmd:geographicElement&gt;</code><br /><code>             &lt;gmd:EX_GeographicBoundingBox&gt;</code><br /><code>               &lt;gmd:westBoundLongitude&gt;</code><br /><code>                 &lt;gco:Decimal&gt;-6.8647&lt;/gco:Decimal&gt;</code><br /><code>               &lt;/gmd:westBoundLongitude&gt;</code><br /><code>               &lt;gmd:eastBoundLongitude&gt;</code><br /><code>                 &lt;gco:Decimal&gt;2.9603&lt;/gco:Decimal&gt;</code><br /><code>               &lt;/gmd:eastBoundLongitude&gt;</code><br /><code>               &lt;gmd:southBoundLatitude&gt;</code><br /><code>                 &lt;gco:Decimal&gt;49.7974&lt;/gco:Decimal&gt;</code><br /><code>               &lt;/gmd:southBoundLatitude&gt;</code><br /><code>               &lt;gmd:northBoundLatitude&gt;</code><br /><code>                 &lt;gco:Decimal&gt;60.7719&lt;/gco:Decimal&gt;</code><br /><code>               &lt;/gmd:northBoundLatitude&gt;</code><br /><code>             &lt;/gmd:EX_GeographicBoundingBox&gt;</code><br /><code>           &lt;/gmd:geographicElement&gt;</code><br /><code>           &lt;gmd:temporalElement&gt;</code><br /><code>             &lt;gmd:EX_TemporalExtent&gt;</code><br /><code>               &lt;gmd:extent&gt;</code><br /><code>                &lt;gml:TimePeriod gml:id="ID1"&gt;</code><br /><code>                   &lt;gml:beginPosition&gt;1995&lt;/gml:beginPosition&gt;</code><br /><code>                   &lt;gml:endPosition&gt;1995&lt;/gml:endPosition&gt;</code><br /><code>                 &lt;/gml:TimePeriod&gt;</code><br /><code>               &lt;/gmd:extent&gt;</code><br /><code>             &lt;/gmd:EX_TemporalExtent&gt;</code><br /><code>           &lt;/gmd:temporalElement&gt;</code><br /><code>         &lt;/gmd:EX_Extent&gt;</code><br /><code>       &lt;/srv:extent&gt;</code><br /><code>       &lt;srv:couplingType&gt;</code><br /><code>         &lt;srv:SV_CouplingType codeListValue="tight" codeList="http://www.isotc211.org/2005/iso19119/resources/codelist/gmxCodelists.xml#SV_CouplingType" /&gt;</code><br /><code>       &lt;/srv:couplingType&gt;</code><br /><code>       &lt;srv:containsOperations gco:nilReason="missing" /&gt;</code><br /><code>       &lt;srv:operatesOn xlink:title="BGS.1M.surface.GeologicUnit" xlink:href="http://ogcdev.bgs.ac.uk/geonetwork/srv/en/csw?SERVICE=CSW&amp;amp;amp;REQUEST=GetRecordById&amp;amp;amp;ID=9df8df52-d788-37a8-e044-0003ba9b0d98&amp;amp;amp;elementSetName=full&amp;amp;amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;amp;amp;" uuidref="9df8df52-d788-37a8-e044-0003ba9b0d98" /&gt;</code><br /><code>       &lt;srv:operatesOn xlink:title="BGS.1M.surface.GeologicUnit.age" xlink:href="http://ogcdev.bgs.ac.uk/geonetwork/srv/en/csw?SERVICE=CSW&amp;amp;amp;REQUEST=GetRecordById&amp;amp;amp;ID=9df8df52-d788-37a8-e044-0003ba9b0d98&amp;amp;amp;elementSetName=full&amp;amp;amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;amp;amp;" uuidref="9df8df52-d788-37a8-e044-0003ba9b0d98" /&gt;</code><br /><code>     &lt;/srv:SV_ServiceIdentification&gt;</code><br /><code>   &lt;/gmd:identificationInfo&gt;</code><br /><code>   &lt;gmd:distributionInfo&gt;</code><br /><code>     &lt;gmd:MD_Distribution&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/gif&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/png; mode=24bit&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/jpeg&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/png&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/vnd.wap.wbmp&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/tiff&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;image/svg+xml&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;NotApplicable&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;text/xml; subtype=gml/3.1.1&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;3.1.1&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;GeoSciML&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version&gt;</code><br /><code>             &lt;gco:CharacterString&gt;2&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:version&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;text/plain&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version gco:nilReason="inapplicable" /&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;text/html&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version gco:nilReason="inapplicable" /&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;application/vnd.ogc.gml&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version gco:nilReason="inapplicable" /&gt;</code><br /><code>         &lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributionFormat&gt;</code><br /><code>         &lt;gmd:MD_Format&gt;</code><br /><code>           &lt;gmd:name&gt;</code><br /><code>             &lt;gco:CharacterString&gt;text/xml&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:name&gt;</code><br /><code>           &lt;gmd:version gco:nilReason="unknown" /&gt;</code><br /><code>         </code><code>&lt;/gmd:MD_Format&gt;</code><br /><code>       &lt;/gmd:distributionFormat&gt;</code><br /><code>       &lt;gmd:distributor&gt;</code><br /><code>         &lt;gmd:MD_Distributor&gt;</code><br /><code>           &lt;gmd:distributorContact&gt;</code><br /><code>             &lt;gmd:CI_ResponsibleParty&gt;</code><br /><code>               &lt;gmd:organisationName&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;British Geological Survey&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:organisationName&gt;</code><br /><code>               &lt;gmd:contactInfo&gt;</code><br /><code>                 &lt;gmd:CI_Contact&gt;</code><br /><code>                   &lt;gmd:phone&gt;</code><br /><code>                     &lt;gmd:CI_Telephone&gt;</code><br /><code>                       &lt;gmd:voice&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;+44 131 667 1000 Ex:364&lt;/gco:CharacterString&gt;</code><br /><code>                     &lt;/gmd:voice&gt;</code><br /><code>                     &lt;/gmd:CI_Telephone&gt;</code><br /><code>                   &lt;/gmd:phone&gt;</code><br /><code>                   &lt;gmd:address&gt;</code><br /><code>                     &lt;gmd:CI_Address&gt;</code><br /><code>                       &lt;gmd:deliveryPoint&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;Murchison House, West Mains Road, Edinburgh, Lothian, United Kingdom, EH9 3LA, NG12 5GG&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:deliveryPoint&gt;</code><br /><code>                       &lt;gmd:city&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;EDINBURGH&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:city&gt;</code><br /><code>                       &lt;gmd:administrativeArea&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;LOTHIAN&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:administrativeArea&gt;</code><br /><code>                       &lt;gmd:postalCode&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;EH9 3LA&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:postalCode&gt;</code><br /><code>                       &lt;gmd:country&gt;</code><br /><code>                         &lt;gco:CharacterString&gt;United Kingdom&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:country&gt;</code><br /><code>                       &lt;gmd:electronicMailAddress&gt;</code><br /><code>&lt;gco:CharacterString&gt;<span id="cloak282858164f3b365ce985f7fdb3ef122a">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak282858164f3b365ce985f7fdb3ef122a').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy282858164f3b365ce985f7fdb3ef122a = '&#101;nq&#117;&#105;r&#105;&#101;s' + '&#64;';
+				addy282858164f3b365ce985f7fdb3ef122a = addy282858164f3b365ce985f7fdb3ef122a + 'bgs' + '&#46;' + '&#97;c' + '&#46;' + '&#117;k';
+				var addy_text282858164f3b365ce985f7fdb3ef122a = '&#101;nq&#117;&#105;r&#105;&#101;s' + '&#64;' + 'bgs' + '&#46;' + '&#97;c' + '&#46;' + '&#117;k';document.getElementById('cloak282858164f3b365ce985f7fdb3ef122a').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy282858164f3b365ce985f7fdb3ef122a + '\'>'+addy_text282858164f3b365ce985f7fdb3ef122a+'<\/a>';
+		</script>&lt;/gco:CharacterString&gt;</code><br /><code>                       &lt;/gmd:electronicMailAddress&gt;</code><br /><code>                     &lt;/gmd:CI_Address&gt;</code><br /><code>                   &lt;/gmd:address&gt;</code><br /><code>                 &lt;/gmd:CI_Contact&gt;</code><br /><code>               &lt;/gmd:contactInfo&gt;</code><br /><code>               &lt;gmd:role&gt;</code><br /><code>                 &lt;gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor"&gt;distributor&lt;/gmd:CI_RoleCode&gt;</code><br /><code>               &lt;/gmd:role&gt;</code><br /><code>             &lt;/gmd:CI_ResponsibleParty&gt;</code><br /><code>           &lt;/gmd:distributorContact&gt;</code><br /><code>         &lt;/gmd:MD_Distributor&gt;</code><br /><code>       &lt;/gmd:distributor&gt;</code><br /><code>       &lt;gmd:transferOptions&gt;</code><br /><code>         &lt;gmd:MD_DigitalTransferOptions&gt;</code><br /><code>           &lt;gmd:onLine&gt;</code><br /><code>             &lt;gmd:CI_OnlineResource&gt;</code><br /><code>               &lt;gmd:linkage&gt;</code><br /><code>&lt;gmd:URL&gt;http://ogc.bgs.ac.uk/BGS_Bedrock_and_Surface_Geology/wms.php?SERVICE=WMS&amp;amp;REQUEST=getCapabilities&amp;amp;&lt;/gmd:URL&gt;</code><br /><code>               &lt;/gmd:linkage&gt;</code><br /><code>               &lt;gmd:protocol&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;OGC:WMS-1.3.0-http-get-capabilities&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:protocol&gt;</code><br /><code>               &lt;gmd:name&gt;</code><br /><code>&lt;gco:CharacterString&gt;BGS.Bedrock.and.Surface.Geology&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:name&gt;</code><br /><code>               &lt;gmd:description&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;BGS Bedrock and Surface geology&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:description&gt;</code><br /><code>               &lt;gmd:function&gt;</code><br /><code>                 &lt;gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download"&gt;download&lt;/gmd:CI_OnLineFunctionCode&gt;</code><br /><code>               &lt;/gmd:function&gt;</code><br /><code>             &lt;/gmd:CI_OnlineResource&gt;</code><br /><code>           &lt;/gmd:onLine&gt;</code><br /><code>         &lt;/gmd:MD_DigitalTransferOptions&gt;</code><br /><code>       &lt;/gmd:transferOptions&gt;</code><br /><code>       &lt;gmd:transferOptions&gt;</code><br /><code>         &lt;gmd:MD_DigitalTransferOptions&gt;</code><br /><code>           &lt;gmd:onLine&gt;</code><br /><code>             &lt;gmd:CI_OnlineResource&gt;</code><br /><code>               &lt;gmd:linkage&gt;</code><br /><code>&lt;gmd:URL&gt;http://ogc.bgs.ac.uk/BGS_Bedrock_and_Surface_Geology/wms.php&lt;/gmd:URL&gt;</code><br /><code>               &lt;/gmd:linkage&gt;</code><br /><code>               &lt;gmd:protocol&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;OGC:WMS-1.3.0-http-get-map&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:protocol&gt;</code><br /><code>               &lt;gmd:name&gt;</code><br /><code>&lt;gco:CharacterString&gt;BGS.1M.surface.GeologicUnit.age&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:name&gt;</code><br /><code>               &lt;gmd:description&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;BGS 1M surface Geologic Unit Age. The layer shows the rocks and superficial deposits present at the land surface, clasified by Geological age&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:description&gt;</code><br /><code>               &lt;gmd:function&gt;</code><br /><code>                 &lt;gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download"&gt;download&lt;/gmd:CI_OnLineFunctionCode&gt;</code><br /><code>               &lt;/gmd:function&gt;</code><br /><code>             &lt;/gmd:CI_OnlineResource&gt;</code><br /><code>           &lt;/gmd:onLine&gt;</code><br /><code>         &lt;/gmd:MD_DigitalTransferOptions&gt;</code><br /><code>       &lt;/gmd:transferOptions&gt;</code><br /><code>       &lt;gmd:transferOptions&gt;</code><br /><code>         &lt;gmd:MD_DigitalTransferOptions&gt;</code><br /><code>           &lt;gmd:onLine&gt;</code><br /><code>             &lt;gmd:CI_OnlineResource&gt;</code><br /><code>               &lt;gmd:linkage&gt;</code><br /><code>&lt;gmd:URL&gt;http://ogc.bgs.ac.uk/BGS_Bedrock_and_Surface_Geology/wms.php&lt;/gmd:URL&gt;</code><br /><code>               &lt;/gmd:linkage&gt;</code><br /><code>               &lt;gmd:protocol&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;OGC:WMS-1.3.0-http-get-map&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:protocol&gt;</code><br /><code>               &lt;gmd:name&gt;</code><br /><code>&lt;gco:CharacterString&gt;BGS.1M.surface.GeologicUnit&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:name&gt;</code><br /><code>               &lt;gmd:description&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;BGS 1M surface Geologic Unit. The layer shows the rocks and superficial deposits present at the land surface, clasified by lithology&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:description&gt;</code><br /><code>               &lt;gmd:function&gt;</code><br /><code>                 &lt;gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download"&gt;download&lt;/gmd:CI_OnLineFunctionCode&gt;</code><br /><code>               &lt;/gmd:function&gt;</code><br /><code>             &lt;/gmd:CI_OnlineResource&gt;</code><br /><code>           &lt;/gmd:onLine&gt;</code><br /><code>         &lt;/gmd:MD_DigitalTransferOptions&gt;</code><br /><code>       &lt;/gmd:transferOptions&gt;</code><br /><code>     &lt;/gmd:MD_Distribution&gt;</code><br /><code>   &lt;/gmd:distributionInfo&gt;</code><br /><code>   &lt;gmd:dataQualityInfo&gt;</code><br /><code>     &lt;gmd:DQ_DataQuality&gt;</code><br /><code>       &lt;gmd:scope&gt;</code><br /><code>         &lt;gmd:DQ_Scope&gt;</code><br /><code>           &lt;gmd:level&gt;</code><br /><code>             &lt;gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="service"&gt;service&lt;/gmd:MD_ScopeCode&gt;</code><br /><code>           &lt;/gmd:level&gt;</code><br /><code>           &lt;gmd:levelDescription&gt;</code><br /><code>             &lt;gmd:MD_ScopeDescription&gt;</code><br /><code>               &lt;gmd:other&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;service&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:other&gt;</code><br /><code>             &lt;/gmd:MD_ScopeDescription&gt;</code><br /><code>           &lt;/gmd:levelDescription&gt;</code><br /><code>         &lt;/gmd:DQ_Scope&gt;</code><br /><code>       &lt;/gmd:scope&gt;</code><br /><code>       &lt;gmd:report&gt;</code><br /><code>         &lt;gmd:DQ_DomainConsistency&gt;</code><br /><code>           &lt;gmd:result&gt;</code><br /><code>             &lt;gmd:DQ_ConformanceResult&gt;</code><br /><code>               &lt;gmd:specification&gt;</code><br /><code>                 &lt;gmd:CI_Citation&gt;</code><br /><code>                   &lt;gmd:title&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services&lt;/gco:CharacterString&gt;</code><br /><code>                   &lt;/gmd:title&gt;</code><br /><code>                   &lt;gmd:date&gt;</code><br /><code>                     &lt;gmd:CI_Date&gt;</code><br /><code>                       &lt;gmd:date&gt;</code><br /><code>                         &lt;gco:Date&gt;2010-12-08&lt;/gco:Date&gt;</code><br /><code>                       &lt;/gmd:date&gt;</code><br /><code>                       &lt;gmd:dateType&gt;</code><br /><code>                         &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmx                                                    Codelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                       &lt;/gmd:dateType&gt;</code><br /><code>                     &lt;/gmd:CI_Date&gt;</code><br /><code>                   &lt;/gmd:date&gt;</code><br /><code>                 &lt;/gmd:CI_Citation&gt;</code><br /><code>               &lt;/gmd:specification&gt;</code><br /><code>               &lt;gmd:explanation&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;See http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:EN:PDF&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:explanation&gt;</code><br /><code>               &lt;gmd:pass&gt;</code><br /><code>                 &lt;gco:Boolean&gt;true&lt;/gco:Boolean&gt;</code><br /><code>               &lt;/gmd:pass&gt;</code><br /><code>             &lt;/gmd:DQ_ConformanceResult&gt;</code><br /><code>           &lt;/gmd:result&gt;</code><br /><code>           &lt;gmd:result&gt;</code><br /><code>             &lt;gmd:DQ_ConformanceResult&gt;</code><br /><code>               &lt;gmd:specification&gt;</code><br /><code>                 &lt;gmd:CI_Citation&gt;</code><br /><code>                   &lt;gmd:title&gt;</code><br /><code>                     &lt;gco:CharacterString&gt;Technical Guidance for the implementation of INSPIRE View Services Version 3.0&lt;/gco:CharacterString&gt;</code><br /><code>                  &lt;/gmd:title&gt;</code><br /><code>                   &lt;gmd:date&gt;</code><br /><code>                     &lt;gmd:CI_Date&gt;</code><br /><code>                       &lt;gmd:date&gt;</code><br /><code>                         &lt;gco:Date&gt;2011-03-21&lt;/gco:Date&gt;</code><br /><code>                       &lt;/gmd:date&gt;</code><br /><code>                       &lt;gmd:dateType&gt;</code><br /><code>                         &lt;gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmx                                                     Codelists.xml#CI_DateTypeCode" codeListValue="publication"&gt;publication&lt;/gmd:CI_DateTypeCode&gt;</code><br /><code>                       &lt;/gmd:dateType&gt;</code><br /><code>                     &lt;/gmd:CI_Date&gt;</code><br /><code>                   &lt;/gmd:date&gt;</code><br /><code>                 &lt;/gmd:CI_Citation&gt;</code><br /><code>               &lt;/gmd:specification&gt;</code><br /><code>               &lt;gmd:explanation&gt;</code><br /><code>                 &lt;gco:CharacterString&gt;See the referenced specification at http://inspire.jrc.ec.europa.eu/documents/Network_Services/TechnicalGuidance_ViewServices_v3.0.pdf&lt;/gco:CharacterString&gt;</code><br /><code>               &lt;/gmd:explanation&gt;</code><br /><code>               &lt;gmd:pass&gt;</code><br /><code>                 &lt;gco:Boolean&gt;true&lt;/gco:Boolean&gt;</code><br /><code>               &lt;/gmd:pass&gt;</code><br /><code>             &lt;/gmd:DQ_ConformanceResult&gt;</code><br /><code>           &lt;/gmd:result&gt;</code><br /><code>         &lt;/gmd:DQ_DomainConsistency&gt;</code><br /><code>       &lt;/gmd:report&gt;</code><br /><code>      &lt;gmd:lineage&gt;</code><br /><code>         &lt;gmd:LI_Lineage&gt;</code><br /><code>           &lt;gmd:statement&gt;</code><br /><code>             &lt;gco:CharacterString&gt;For lineage of datasets served by this service please refer to the metadata for those data&lt;/gco:CharacterString&gt;</code><br /><code>           &lt;/gmd:statement&gt;</code><br /><code>         &lt;/gmd:LI_Lineage&gt;</code><br /><code>       &lt;/gmd:lineage&gt;</code><br /><code>     &lt;/gmd:DQ_DataQuality&gt;</code><br /><code>   &lt;/gmd:dataQualityInfo&gt;</code><br /><code>&lt;/gmd:MD_Metadata&gt;</code><br /><em><br />Last updated: June 2018</em><code></code></pre>
 <h3><a id="1.6"></a>1.6 XML Fragments</h3>
 <p>This document contains examples of XML encoding. The examples are considered fragments in that they are not complete XML documents. The following conventions are used:</p>
 <ul>
@@ -920,8 +1600,6 @@
             
         
             
-        
-            
                 <div class="entry">
                     <h5>
                         <a href="/docs/technical-guidance/datasets/">Datasets</a>
@@ -1014,7 +1692,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified January 21, 2021: <a  href="https://github.com/KoalaGeo/ukgemini/commit/b03ac6bcc6267379512b5384b2a92ae8ccc9e9a8">add deployment submodules (b03ac6b)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 21, 2021: <a  href="https://github.com/KoalaGeo/ukgemini/commit/f1af19e8996a17762c2e8d6bbe2d940bc90c74f8">edits (f1af19e)</a>
 </div>
 </div>
 
