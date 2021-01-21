@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.70.0" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Metadata Guidelines for Geospatial Data Resources - Part 2&lt; | UK Gemini</title><meta property="og:title" content="Metadata Guidelines for Geospatial Data Resources - Part 2&lt;" />
+<meta property="og:description" content="General Metadata Guidelines for Geospatial Data Resources - Part 2&lt;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/guidelines/guidelinespart2/" />
+<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" /><meta property="og:site_name" content="UK Gemini" />
+<meta itemprop="name" content="Metadata Guidelines for Geospatial Data Resources - Part 2&lt;">
+<meta itemprop="description" content="General Metadata Guidelines for Geospatial Data Resources - Part 2&lt;">
+<meta itemprop="datePublished" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-01-05T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2779">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Metadata Guidelines for Geospatial Data Resources - Part 2&lt;"/>
+<meta name="twitter:description" content="General Metadata Guidelines for Geospatial Data Resources - Part 2&lt;"/>
+
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zM197.0804 232.033c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zM197.0804 177.6188c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zM197.5309 286.4723c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zM197.0804 340.5784c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="text-uppercase font-weight-bold">UK Gemini</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="/about/" ><span>About</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="/why/" ><span>Why UK GEMINI</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="/blog/" ><span>Blog</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a  class="nav-link" href="/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs">
+      
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/overview/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsoverview">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/getting-started/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Getting Started</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsgetting-started">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsgetting-startedexample-page" href="/docs/getting-started/example-page/">Example Page</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/guidelines/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsguidelines">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsguidelinesguidelinespart1" href="/docs/guidelines/guidelinespart1/">Part 1</a>
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsguidelinesguidelinespart2" href="/docs/guidelines/guidelinespart2/">Part 2</a>
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsguidelinesguidelinespart3" href="/docs/guidelines/guidelinespart3/">Part 3</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/technical-guidance/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Technical Guidance</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docstechnical-guidance">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docstechnical-guidancedatasets" href="/docs/technical-guidance/datasets/">Datasets</a>
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docstechnical-guidanceservices" href="/docs/technical-guidance/services/">Services</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/common-errors/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Common Errors</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docscommon-errors">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/case-studies/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Case Studies</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docscase-studies">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/reference/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Reference</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsreference">
+      
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferencechanges" href="/docs/reference/changes/">Changes</a>
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferenceglossary" href="/docs/reference/glossary/">Glossary</a>
+        
+      
+      
+      
+        
+          
+          
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-docsreferencemetadata-elements" href="/docs/reference/metadata-elements/">Metadata Elements</a>
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+      
+        
+          
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/contribution-guidelines/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Contribution Guidelines</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docscontribution-guidelines">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+        
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+  
+  
+  
+  
+  
+  <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    <a href="https://github.com/KoalaGeo/ukgemini/edit/master/content/en/docs/Guidelines/guidelinespart2.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+    <a href="https://github.com/KoalaGeo/ukgemini/new/master/content/en/docs/Guidelines/guidelinespart2.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" target="_blank"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+    <a href="https://github.com/KoalaGeo/ukgemini/issues/new?title=Metadata%20Guidelines%20for%20Geospatial%20Data%20Resources%20-%20Part%202&amp;lt;" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+    
+      
+      <a href="https://github.com/AGIGemini/Schematron/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+    
+
+  
+  
+    <a id="print" href="/docs/guidelines/_print/"><i class="fa fa-print fa-fw"></i> Print entire section</a>
+  
+  </div>
+
+
+
+
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/docs/guidelines/">Guidelines</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/docs/guidelines/guidelinespart2/">Part 2</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Metadata Guidelines for Geospatial Data Resources - Part 2&lt;</h1>
+    <div class="lead">General Metadata Guidelines for Geospatial Data Resources - Part 2&lt;</div>
+	
+        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 14 minute read</p>
+           
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Metadata Guidelines for Geospatial Data Resources - Part 2&lt;</p>
+
+</div>
+
+<h3>Creating metadata using UK GEMINI (v2.3) May 2018 - <em>being revised</em></h3>
+<p>Return to <a title="GEMINI 2.3 home page" href="/gemini/40-gemini/1037-uk-gemini-standard-and-inspire-implementing-rules">GEMINI 2.3 home page</a></p>
+<p><a title="Introduction" href="#Intro" rel="alternate">1. Introduction</a></p>
+<p><a title="GEMINI2" href="#gemini" rel="alternate">2. GEMINI2</a></p>
+<p style="padding-left: 30px;"><a title="2.1 Metadata elements" href="#2.1" rel="alternate">2.1 Metadata elements</a></p>
+<p style="padding-left: 30px;"><a title="2.2 Additional metadata elements" href="#2.2" rel="alternate">2.2 Additional metadata elements</a></p>
+<p style="padding-left: 30px;"><a title="2.3 Extension code lists" href="#2.3" rel="alternate">2.3 Extension code lists</a></p>
+<p><a title="Possible metadata errors" href="#errors" rel="alternate">3. Possible metadata errors</a></p>
+<p style="padding-left: 30px;"><a title="3.1 Impact of metadata errors" href="#3.1" rel="alternate">3.1 Impact of metadata errors</a></p>
+<p style="padding-left: 30px;"><a title="3.2 Effect on searches" href="#3.2" rel="alternate">3.2 Effect on searches</a></p>
+<p style="padding-left: 30px;"><a title="3.3 Prevention and correction of errors" href="#3.3" rel="alternate">3.3 Prevention and correction of errors</a></p>
+<p style="padding-left: 30px;"><a title="3.4 Common errors" href="#3.4" rel="alternate">3.4 Common errors</a></p>
+<p><a title="Guidance for individual metadata elements" href="#guidance" rel="alternate">4. Guidance for individual metadata elements</a></p>
+<p style="padding-left: 30px;"> </p>
+<h2>Preface</h2>
+<p>This is the second part of a set of guidelines for metadata for geospatial data resources. These metadata guidelines are primarily concerned with geospatial data (i.e. that which references data to a location on the surface of the Earth), and which has a limited geographic extent (i.e. is restricted to a defined territory). The guidelines have been developed within the context of a UK Location Discovery metadata service meeting the requirements of the EU INSPIRE Directive and the UK GEMINI2 metadata standard. However, they are sufficiently broadly based to be applicable in a wider context of geospatial metadata creation and management.</p>
+<p>The Guidelines are aimed at data managers and creators of metadata, providers of metadata services and general data users. They include guidance on quality management such that they could be used in the context of a national metadata service.</p>
+<p><a title="Metadata Guidelines for Geospatial Data Resources - Part 1" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1" target="_blank" rel="alternate noopener noreferrer">Part 1 of the Guidelines </a>covers the basics of metadata and provides an introduction to the other two parts. It includes a glossary of terms and set of references. Part 3 [<a title="References" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3" target="_blank" rel="alternate noopener noreferrer">3</a>] deals with metadata quality and covers quality evaluation and quality management of metadata including guidance on establishing acceptable quality levels. This Part of the Guidelines provides a set of detailed guidelines for UK GEMINI2 metadata elements. It has been revised to correspond to version 2.3 of UK GEMINI.</p>
+<p>Any comments on these guidelines or on the UK GEMINI2 metadata standard should be sent to <span id="cloak471d5cfa42bb10d384196fd525edb5c0">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak471d5cfa42bb10d384196fd525edb5c0').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy471d5cfa42bb10d384196fd525edb5c0 = 'g&#101;m&#105;n&#105;' + '&#64;';
+				addy471d5cfa42bb10d384196fd525edb5c0 = addy471d5cfa42bb10d384196fd525edb5c0 + '&#97;g&#105;' + '&#46;' + '&#111;rg' + '&#46;' + '&#117;k';
+				var addy_text471d5cfa42bb10d384196fd525edb5c0 = 'g&#101;m&#105;n&#105;' + '&#64;' + '&#97;g&#105;' + '&#46;' + '&#111;rg' + '&#46;' + '&#117;k';document.getElementById('cloak471d5cfa42bb10d384196fd525edb5c0').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy471d5cfa42bb10d384196fd525edb5c0 + '\'>'+addy_text471d5cfa42bb10d384196fd525edb5c0+'<\/a>';
+		</script>.</p>
+<h2><a id="intro"></a> 1. Introduction</h2>
+<p>UK GEMINI2 defines a core set of metadata elements for discovery of data resources and other essential purposes. It provides details of what metadata should be collected for geospatial data resources and is designed for use in a geospatial discovery metadata service. The data resources may be datasets, dataset series, services delivering geographic data, or any other information resource with a geospatial content. This includes datasets that relate to a limited geographic area. The data resources may be graphical or textual (tabular or free text), hardcopy or digital.</p>
+<p>This part of the <em>Metadata Guidelines for Geospatial Data Resources</em> provides detailed guidance for the application of UK GEMINI2. It is aimed at those creating metadata conforming to UK GEMINI2. This expands on existing guidance given in the UK GEMINI2 specification[<a title="References" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3" target="_blank" rel="alternate noopener noreferrer">4</a>]. It also describes possible errors that might occur in such metadata and suggests actions to guard against them. It explains how to expand the metadata elements in addition to those in UK GEMINI2 if required, and how to extend code lists of allowable values.</p>
+<p>This Part should be read in conjunction with the other parts of these guidelines.</p>
+<h2><a id="gemini"></a> 2. GEMINI2</h2>
+<h3><strong><em><a id="2.1"></a>2.1 Metadata elements</em></strong></h3>
+<p>UK GEMINI2 specifies a set of metadata elements for describing geospatial data resources. These resources may be a dataset, data set series (collection of datasets with a common specification) or data service. The type of resource is identified in the element Resource Type (39). The metadata elements are summarised in <a title="GEMINI element summary" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1250-element-summary">element summary</a>.</p>
+<p>Detailed guidance on how to create each of these elements can be found here:</p>
+<p><a title="GEMINI - Datasets and data series" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1027-citizens-as-sensors-a-solution-to-pollution" rel="alternate">GEMINI - Datasets and data series</a></p>
+<p><a title="GEMINI - Services" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1028-new-agi-council-members-for-2017" rel="alternate">GEMINI - Services</a></p>
+<h3><strong><em><a id="2.2"></a>2.2 Additional metadata elements</em></strong></h3>
+<p>In many organisations, there is a need to record additional items of metadata to meet specific local requirements. This may be to incorporate particular characteristics of the data resources, or for particular applications. Additional metadata elements may be included in a metadata implementation. These elements should be taken from ISO 19115 <em>Geographic information - Metadata </em>[<a href="/agi-groups/standards-committee/uk-gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3">18</a>], which includes a comprehensive collection of metadata elements for geographic information. An example would be Dataset character set and Metadata character set where non-standard characters are used.</p>
+<h3><strong><em><a id="2.3"></a>2.3 Extension of code lists</em></strong></h3>
+<p>Several of the metadata elements specified in UK GEMINI2 use enumerated code lists. These are pre-defined sets of values identified by codes. They are useful to standardise the entries to aid searches of metadata for specified values. The code lists included in UK GEMINI2 are taken from ISO 19115. In some cases, the explanations of the values have been modified to make them more appropriate to the UK context.</p>
+<p>Some of these code lists will require extension. Additional codes may be created as follows:</p>
+<ol>
+<li>Identify the new value, which should be distinct from existing values;</li>
+<li>Choose a name that encapsulates the essential concept;</li>
+<li>Provide a definition that is understandable and concise;</li>
+<li>Choose a new code that has not been used before for this element;</li>
+<li>Document the new codes, and disseminate them to users.</li>
+</ol>
+<p>Such code extensions may be either specific to a metadata implementation in an organisation or sector, or for general usage. In the latter case, proposed new codes should be submitted (to <span id="cloakc7aa8b6999e1afdf768bfff301fd10ae">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakc7aa8b6999e1afdf768bfff301fd10ae').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyc7aa8b6999e1afdf768bfff301fd10ae = 'st&#97;nd&#97;rds' + '&#64;';
+				addyc7aa8b6999e1afdf768bfff301fd10ae = addyc7aa8b6999e1afdf768bfff301fd10ae + '&#97;g&#105;' + '&#46;' + '&#111;rg';
+				var addy_textc7aa8b6999e1afdf768bfff301fd10ae = 'g&#101;m&#105;n&#105;' + '&#64;' + '&#97;g&#105;' + '&#46;' + '&#111;rg' + '&#46;' + '&#117;k';document.getElementById('cloakc7aa8b6999e1afdf768bfff301fd10ae').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyc7aa8b6999e1afdf768bfff301fd10ae + '\'>'+addy_textc7aa8b6999e1afdf768bfff301fd10ae+'<\/a>';
+		</script>) for inclusion in the next version of UK GEMINI2. It is expected that future editions of UK GEMINI will incorporate such modified code lists.</p>
+<p><strong>Note that any new code values cannot be used in a national metadata service until incorporated in the Standard, neither will they be valid for the purposes of INSPIRE.</strong></p>
+<h2><a id="errors"></a> 3. Possible metadata errors</h2>
+<h3><strong><em><a id="3.1"></a>3.1 Impact of metadata errors</em></strong></h3>
+<p>Errors having the greatest impact are likely to be those that affect searches based on:</p>
+<ul>
+<li><strong>Where?</strong> - geographical extent expressed in latitude and longitude or some named standard area (e.g. administrative area, postcode, country);</li>
+<li><strong>What?</strong> - theme, subject or topic;</li>
+<li><strong>When?</strong> - date when data resource was current.</li>
+</ul>
+<p>Errors in the metadata elements used by these searches will result in over- or under-selection of data resources and will degrade the quality of the discovery service that is providing the search facility. Inconsistencies in the capture or updating of metadata, such as the categorisation of data subject or topic, will further erode the quality of the discovery service.</p>
+<h3><strong><em><a id="3.2"></a>3.2 Effect on searches</em></strong></h3>
+<p>Having discovered a number of candidate data resources, the discovery service user then assesses the likelihood that any of these meet their requirements. They will need the information in the other metadata elements such as abstract, lineage, data format, and constraints to make their assessment. Inaccuracies, inconsistencies, or incompleteness will detract from the quality of the discovery service.</p>
+<p>Information also needs to be topical or up-to-date. Discovery services are bedevilled by metadata containing information current at the inception of the service but never maintained since. The service user needs to have reliable information about where they can find out more about the data resource and how they can obtain that resource. It is not uncommon for this to be out-of-date or have incorrect URLs or contact details.</p>
+<h3><strong><em><a id="3.3"></a>3.3 Prevention and correction of errors</em></strong></h3>
+<p>Prevention and correction of these errors is usually a combination of:</p>
+<ul>
+<li>Understanding the nature of the errors;</li>
+<li>Clear guidance on avoidance of errors at time of entry – metadata capture tools may help here in validating entries;</li>
+<li>Staff trained in metadata capture who understand the nature of the data resources being documented;</li>
+<li>Independent quality control with specified quality evaluation procedures, acceptable quality levels and procedures for dealing with metadata that fails;</li>
+<li>Periodic reviews of existing metadata to check that all information is current;</li>
+<li>Procedures for dealing with errors reported by service providers or users;</li>
+<li>Overall quality assurance process which reviews procedures in the light of experience and aims to improve overall metadata quality.</li>
+</ul>
+<p>Further guidance on how to prevent and correct errors is given in Part 3 [<a title="References" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1047-metadata-guidelines-for-geospatial-data-resources-part-3" target="_blank" rel="alternate noopener noreferrer">3</a>] of these Guidelines.</p>
+<h3><strong><em><a id="3.4"></a>3.4 Common errors</em></strong></h3>
+<p>Some common errors that lead to inconsistent results when searching across metadatasets are:</p>
+<ul>
+<li>Documentation is too general;</li>
+<li>Extent is over-generalised;</li>
+<li>Subjects and topic categories are under-reported;</li>
+<li>Incorrect or inconsistent date entries;</li>
+<li>Different names are used for the same item in different places;</li>
+<li>Missing values;</li>
+<li>Data is not current.</li>
+</ul>
+<p>The nature and impact of these types of error are described in more detail below, together with suggested ways in which these errors can be prevented or corrected.</p>
+<table border="1" width="919">
+<thead>
+<tr>
+<td width="163">
+<p><strong>Type of error</strong></p>
+</td>
+<td width="252">
+<p><strong>Description and impact</strong></p>
+</td>
+<td width="252">
+<p><strong>Examples of errors</strong></p>
+</td>
+<td width="252">
+<p><strong>Prevention or correction</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="163">
+<p>Documentation too general</p>
+</td>
+<td width="252">
+<p>There are no absolute rules about how data resources should be “chunked” and individually documented. A metadata record can therefore refer to a dataset covering a single topic relating to a small area or major dataset series covering all or parts of UK containing many topics. This can lead to inconsistent search results with either over- or under-selection of data resources.  </p>
+</td>
+<td width="252">
+<ol>
+<li>Topographic mapping covering whole of GB at different scales to different specifications documented using one metadata record.</li>
+<li>Reports produced by an organisation relating to a variety of locations and dates documented using one metadata record.</li>
+</ol>
+</td>
+<td width="252">
+<p>Have clear guidance on the “chunking” of data resources for individual documentation[See <a title="Part 1 of these Guidelines" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1052-metadata-guidelines-for-geospatial-data-resources-part-1" target="_blank" rel="alternate noopener noreferrer">Part 1 of these Guidelines</a>] based on:</p>
+<ol style="list-style-type: lower-roman;">
+<li>how the data is used (stand-alone or as part of wider set);  </li>
+<li>continuity and extent of coverage;</li>
+<li>date of capture or maintenance;</li>
+<li>topics or subjects covered, and</li>
+<li>uniformity of specification within data resource.</li>
+</ol>
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Extent over-generalised</p>
+</td>
+<td width="252">
+<p>This particularly applies when extent is described in terms of standard geographical areas such as postcode districts, counties, or countries. Inconsistencies in relating data resource coverage to these areas and the use of different extent names to refer to the same coverage results in either over- or under-selection of data resources.</p>
+</td>
+<td width="252">
+<ol>
+<li>Coverage given as UK or GB when restricted to England.</li>
+<li>Coverage of UK referred to as GB.</li>
+<li>Coverage given as England when restricted to Hampshire only.</li>
+</ol>
+</td>
+<td width="252">
+<p>Have clear rules and user guidance on the relating of named extents to the coverage of data resources and guidelines on the types of extents to be used. Where named extents form part of a nesting hierarchy (e.g. administrative areas) then any guidance should cover the possible need for inclusion of levels in the hierarchy.</p>
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Subjects and topic categories under-reported</p>
+</td>
+<td width="252">
+<p>This particularly applies where there are enumerated lists of topics. Inconsistency in the inclusion of individual topics can lead to over- or under-selection of data resources.</p>
+</td>
+<td width="252">
+<p>Metadata for topographic map series does not include boundaries, elevation, inland waters, structure, and transportation as topics.</p>
+</td>
+<td width="252">
+<p>Use guidance on the recording of topics or themes to promote consistency.</p>
+<p>Use closed lists wherever possible and discourage the use of free text.</p>
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Incorrect or inconsistent date entries</p>
+</td>
+<td width="252">
+<p>There is often confusion between the date that the data was current, the date when the data was captured or last updated and the date when the data resource was released, published or made available.</p>
+<p>There can be further inconsistencies between the frequency of update and the recorded currency of the data resource. This can lead to   false returns for searches based on dates.</p>
+</td>
+<td width="252">
+<ol>
+<li>Date of capture of data resource later than date of publication.</li>
+<li>Update reported as continuous but date of last update reported as 10 years ago.</li>
+</ol>
+</td>
+<td width="252">
+<p>Use guidance on the recording of different dates to promote consistency.</p>
+<p>Introduce checks, preferably by software, to ensure that the ordering of dates is consistent.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Same item, different name</p>
+</td>
+<td width="252">
+<p>This is particularly relevant where there is no closed list but a name or descriptor recurs which is common to many metadatasets. This may lead to inconsistent results or, more frequently misinterpretation of results.</p>
+</td>
+<td width="252">
+<p>National Grid, British National Grid, National Grid of Great Britain.</p>
+</td>
+<td width="252">
+<p>Include frequently used standard names in any internal guidance.</p>
+<p>Introduce checks to ensure consistency of approach across all metadata.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Missing values</p>
+</td>
+<td width="252">
+<p>Omission of values relating to extent, date or topic will have great impact on searches since these are the usual criteria used.</p>
+</td>
+<td width="252">
+<ol>
+<li>Omission of geographical extent.</li>
+<li>Omission of dataset reference date.</li>
+<li>Missing topic categories.</li>
+</ol>
+</td>
+<td width="252">
+<p>Introduce checks, preferably software checks, to ensure that mandatory fields contain values.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Information not current</p>
+</td>
+<td width="252">
+<p>This can impact both on searches and the interpretation of search results since the metadata does not reflect the current information or only does so partially.</p>
+</td>
+<td width="252">
+<ol>
+<li>Content of data resource extended but no change to topic categories.</li>
+<li>Abstract not updated to reflect change of specification.</li>
+<li>Data resource updated but later date not entered in the metadata.</li>
+</ol>
+</td>
+<td width="252">
+<p>Introduce a regime of regular checks on all metadata to ensure that currency is assessed and updates made where needed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Other errors that may lead to misinterpretation of results are:</p>
+<ul>
+<li>Correct value, but for the wrong metadata element;</li>
+<li>Values incorrect, incomplete or inaccurate;</li>
+<li>Incomprehensible, misleading or uninformative entries.</li>
+</ul>
+<p>The nature and impact of these types of error are described in more detail below, together with suggested ways in which these errors can be prevented or corrected.</p>
+<table border="1" width="919">
+<tbody>
+<tr>
+<td width="163">
+<p><strong>Type of error</strong></p>
+</td>
+<td width="252">
+<p><strong>Description and impact</strong></p>
+</td>
+<td width="288">
+<p><strong>Examples of errors</strong></p>
+</td>
+<td width="216">
+<p><strong>Prevention or correction</strong></p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Correct value, wrong metadata element</p>
+</td>
+<td width="252">
+<p>Confusion between the definitions of metadata elements can lead to correct values entered against the wrong metadata element.</p>
+</td>
+<td width="288">
+<ol>
+<li>Lineage information given for abstract.</li>
+<li>Limitations on public access given for use constraints.</li>
+</ol>
+</td>
+<td width="216">
+<p>Use guidance on the definition and use of the metadata elements especially those most commonly confused (see examples).</p>
+<p>Introduce training and checks to ensure correct use of elements.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Values incorrect, incomplete or inaccurate</p>
+</td>
+<td width="252">
+<p>This can apply to both quantitative and non-quantitative entries and can impact on the way that results are interpreted and used.</p>
+</td>
+<td width="288">
+<ol>
+<li>URL given as additional information source incorrect and not accessible.</li>
+<li>Contact details for obtaining data resource are incorrect.</li>
+</ol>
+</td>
+<td width="216">
+<p>Check values are correct as far as can be established e.g. independently check URLs, contact details.</p>
+</td>
+</tr>
+<tr>
+<td width="163">
+<p>Incomprehensible, misleading or uninformative  entries</p>
+</td>
+<td width="252">
+<p>Entries need to be understandable by the discovery service user who needs to interpret the search results. The impact can be that results are misinterpreted and candidate datasets ignored.</p>
+</td>
+<td width="288">
+<ol>
+<li>Where dataset does not have a recognised title, uninformative title given.</li>
+<li>Abstract is uninformative with no information on content.</li>
+<li>Lineage contains no information about sources or reasons for creation.</li>
+<li>Use of terms and abbreviations unlikely to be understood by service user.</li>
+</ol>
+</td>
+<td width="216">
+<p>Use guidance and checklists for compiling entries e.g. abstracts.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><a id="guidance"></a>4. Guidance for individual metadata elements</h2>
+<p>Detailed guidance on how to create each of these elements can be found here:</p>
+<p><a href="/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series" target="_blank" rel="noopener noreferrer">GEMINI - Datasets and data series</a></p>
+<p><a title="GEMINI - Services" href="/agi-groups/standards-committee/uk-gemini/40-gemini/1063-gemini-services" target="_blank" rel="alternate noopener noreferrer">GEMINI - Services</a></p>
+<p>Each metadata element is listed separately, as described in <a href="/agi-groups/standards-committee/uk-gemini/40-gemini/1244-uk-gemini-introduction#4.3">UK GEMINI Introduction</a>.</p>
+<p><em>Last updated: May 2018</em></p>
+<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"> <img style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Licence" /> </a> <br />This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a></p> 	
+<pre><code>&lt;/div&gt;
+
+                                &lt;/div&gt;
+            &lt;div class=&quot;col-lg-3 col-md-3 col-sm-12 sidebar&quot;&gt;
+                        &lt;div class=&quot;module submenuver&quot;&gt;
+    &lt;div&gt;
+                        &lt;h3&gt;Main Submenu&lt;/h3&gt;
+                        &lt;ul class=&quot;nav menu&quot;&gt;
+</code></pre>
+<li class="item-145 deeper parent"><a href="/agi-groups/national-groups" >National Groups</a><ul><li class="item-150 deeper parent"><a href="/agi-groups/national-groups/agi-cymru" >AGI Cymru</a><ul><li class="item-153"><a href="/agi-groups/national-groups/agi-cymru/agi-cymru-committee" >AGI Cymru Committee</a></li><li class="item-365"><a href="/agi-groups/national-groups/agi-cymru/agi-geocymru-blogs" >AGI Cymru Blog</a></li></ul></li><li class="item-151 deeper parent"><a href="/agi-groups/national-groups/agi-northern-ireland" >AGI Northern Ireland</a><ul><li class="item-154"><a href="/agi-groups/national-groups/agi-northern-ireland/agi-northern-ireland-committee" >AGI Northern Ireland Committee</a></li><li class="item-368"><a href="/agi-groups/national-groups/agi-northern-ireland/agi-northern-ireland-blog" >AGI Northern Ireland Blog</a></li></ul></li><li class="item-152 deeper parent"><a href="/agi-groups/national-groups/agi-scotland" >AGI Scotland</a><ul><li class="item-158"><a href="/agi-groups/national-groups/agi-scotland/agi-scotland-committee" >AGI Scotland Committee</a></li><li class="item-302"><a href="/agi-groups/national-groups/agi-scotland/agi-scotland-blog" >AGI Scotland Blog</a></li><li class="item-366"><a href="/agi-groups/national-groups/agi-scotland/edinburgh-earth-observatory-eeo-seminars" >Edinburgh Earth Observatory (EEO) Seminars</a></li></ul></li></ul></li><li class="item-147 deeper parent"><a href="/agi-groups/special-interest-groups" >Special Interest Groups</a><ul><li class="item-285 deeper parent"><a href="/agi-groups/special-interest-groups/early-careers-network" >Early Careers Network</a><ul><li class="item-271"><a href="/agi-groups/special-interest-groups/early-careers-network/ecn-blog" >Early Careers Network Blog</a></li></ul></li></ul></li><li class="item-148 active deeper parent"><a href="/agi-groups/standards-committee" >Standards Committee</a><ul><li class="item-186"><a href="/agi-groups/standards-committee/the-importance-of-standards" >The Importance of Standards</a></li><li class="item-262"><a href="/agi-groups/standards-committee/standards-resources" >Standards Resources</a></li><li class="item-264 current active deeper parent"><a href="/agi-groups/standards-committee/uk-gemini" >UK GEMINI</a><ul><li class="item-363"><a href="/agi-groups/standards-committee/uk-gemini/agi-gemini-update" >AGI GEMINI Update</a></li></ul></li><li class="item-303"><a href="/agi-groups/standards-committee/bs7666-guidelines" >BS 7666 Guidelines</a></li><li class="item-305"><a href="/agi-groups/standards-committee/review-of-bs-7666" >Review of BS 7666</a></li><li class="item-357"><a href="/agi-groups/standards-committee/why-uk-gemini-why-not-just-have-the-inspire-technical-guidance" >Why UK GEMINI? Why not just have the INSPIRE Technical Guidance?</a></li></ul></li><li class="item-149 deeper parent"><a href="/agi-groups/action-working-groups" >Action Working Groups</a><ul><li class="item-188"><a href="/agi-groups/action-working-groups/events-awg" >Events AWG</a></li></ul></li></ul>
+		</div>
+		</div>
+<pre><code>            &lt;/div&gt;
+			
+                        &lt;/div&gt;
+		
+                &lt;/div&gt;
+&lt;/section&gt;
+
+
+    &lt;section class=&quot;bottom&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;module col-sm-4&quot;&gt;
+    &lt;div&gt;
+                        &lt;ul class=&quot;nav menu&quot;&gt;
+</code></pre>
+<li class="item-254 alias-parent-active"><a href="/agi-groups" >AGI Groups</a></li><li class="item-193"><a href="/resources" >Resources</a></li><li class="item-191"><a href="/privacy-policy" >Privacy Policy</a></li><li class="item-192"><a href="/terms-and-conditions" >Terms &amp; Conditions</a></li></ul>
+		</div>
+		</div>
+<pre><code>        &lt;div class=&quot;module connect col-sm-4&quot;&gt;
+    &lt;div&gt;
+                        &lt;h3&gt;Connect&lt;/h3&gt;
+                        &lt;div&gt;
+&lt;a href=&quot;https://vimeo.com/geocommunity&quot; class=&quot;vimeo&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://twitter.com/geocommunity&quot; class=&quot;twitter&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://www.linkedin.com/groups/3744691/&quot; class=&quot;linkedin&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;
+</code></pre>
+</div>
+		</div>
+		</div>
+<pre><code>        &lt;div class=&quot;module details col-sm-4 col-md-3 col-md-offset-1&quot;&gt;
+    &lt;div&gt;
+</code></pre>
+<div>
+	<p>Lancaster Court<br />8 Barnes Wallis Road<br />Fareham<br />Hampshire PO15 5TU</p>
+<p>Tel: +44 (<span style="font-size: 16px;">0)1489 668 340</span><br />Email: <a href="mailto:info@agi.org.uk">info@agi.org.uk</a></p></div>
+		</div>
+		</div>
+<pre><code>        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+	
+&lt;footer&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-sm-6 wf&quot;&gt;
+                Website by &lt;a href=&quot;https://www.web-foundry.co.uk&quot; target=&quot;_blank&quot;&gt;Web Foundry&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-6 copy&quot;&gt;
+                Copyright &amp;copy; 2014 AGI. All rights reserved.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/templates/agi/js/bootstrap.min.js?v=1&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/templates/agi/js/template.js?v=3&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    (function($){
+    $(document).ready(function () {
+    $.cookieCuttr(
+    {
+    cookieOverlayEnabled: false,
+    cookieNotificationLocationBottom: false,
+    cookieAnalytics: false,	
+    cookieCutter: true,
+    cookieMessage: 'We use cookies for the proper functioning of this website. Read our &lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;.  ',
+    cookiePolicyLink: '/privacy-policy',
+    cookieDeclineButton: true,
+    cookieDiscreetLink: false,
+    cookieDiscreetPosition: 'topright',
+    cookieAcceptButtonText: 'ACCEPT COOKIES',
+    cookieDeclineButtonText: 'DECLINE COOKIES',
+    cookieDisable: '#comments',
+    cookieDomain: 'index.php/cookies-policy',
+    cookieErrorMessage: 'This feature places cookies in your browser and has been disabled.To continue using this functionality, please ...',
+    });
+    });
+    })(jQuery);
+    &lt;/script&gt;
+</code></pre>
+</body>
+</html>
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<div class="d-print-none">
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+</div>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified January 5, 2017
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="gemini@agi.org.uk">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://twitter.com/geocommunity">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Vimeo" aria-label="Vimeo">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/geocommunity">
+      <i class="fab fa-vimeo"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/KoalaGeo/ukgemini">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="gemini@agi.org.uk">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 AGI All Rights Reserved</small>
+        <small class="ml-1"><a href="https://www.agi.org.uk/privacy-policy" target="_blank">Privacy Policy</a></small>
+	
+		<p class="mt-2"><a href="/about/">About UK GEMINI</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.b5fc1b29d2465835844254bd4d804738eaf24c0cec53009b4c6899989be55a47.js" integrity="sha256-tfwbKdJGWDWEQlS9TYBHOOryTAzsUwCbTGiZmJvlWkc=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

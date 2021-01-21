@@ -1,9 +1,9 @@
 ---
-title: "Common Errors"
+title: "Common Metadata Errors"
 linkTitle: "Common Errors"
 weight: 6
 description: >
-  COMMON METADATA ERRORS - UK Location Discovery Metadata Service
+  quality assuring metadata, then information on common metadata errors can found here.
 ---
 
 {{% pageinfo %}}
