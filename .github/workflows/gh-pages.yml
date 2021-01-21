@@ -25,7 +25,7 @@ jobs:
         run: hugo version && sudo npm install -g postcss-cli && sudo  npm install autoprefixer && sudo npm audit fix
 
       - name: Build
-        run: hugo
+        run: hugo --environment GithubProjectPage
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
